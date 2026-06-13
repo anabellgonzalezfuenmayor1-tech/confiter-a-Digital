@@ -1,0 +1,822 @@
+/*CONFIGURACIONES GENERALES*/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+
+
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(15px, 1.22vw, 30px);
+}
+
+/* HEADER MOBILE*/
+header {
+    box-sizing: border-box;
+    background-color: #8E0F19;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-logo {
+    height: 60px;
+}
+
+.header-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-mobile {
+    height: 7vh;
+}
+
+.header-group {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* HEADER TABLET Y PC */
+@media (min-width: 901px) {
+
+    header {
+        min-height: 13vh;
+        padding: 0 30px;
+    }
+
+    .header-logo {
+        height: 75px;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+    .header-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.33vw;
+    }
+
+    section {
+        gap: 3.5rem;
+    }
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-fondo {
+    width: 100%;
+    height: 30vh;
+    background-position: top;
+    background-size: cover;
+    animation: moverBanner 10s ease-in-out infinite alternate;
+}
+.banner-inicio {
+    background-image: url("Imagenes/Banner Index1,1.png");
+    background-position: center;
+}
+
+.banner-inico2 {
+    background-image: url("Imagenes/banner\ index3.png.png");
+    background-position: top;
+}
+
+.banner-inicio3 {
+    background-image: url("Imagenes/Banner Index1.png");
+    background-position: bottom;
+}
+@keyframes moverBanner {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: right center;
+    }
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 40vw;
+}
+
+.banner-title {
+    text-align: center;
+    font-size: clamp(12px, 1vw, 40px);
+    margin: 0;
+    color: #632A13;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.banner-sub {
+    font-weight: bold;
+    text-align: center;
+    color: #8E0F19;
+    font-size: clamp(12px, 2vw, 40px);
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* TABLET Y ESCRITORIO */
+@media (min-width: 768px) {
+
+    .banner-fondo {
+        height: 75vh;
+    }
+
+    .banner-title {
+        font-size: clamp(20px, 4vw, 70px);
+    }
+
+    .banner-sub {
+        font-size: clamp(20px, 6vw, 70px);
+    }
+}
+
+/*EL TITULO DE LA SECCION DE ADAPTA A LOS TRES*/
+
+.title {
+    font-size: clamp(14px, 2vw, 28px);
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 88.86vw;
+    gap: 2rem;
+    padding: 0 5vw;
+
+}
+
+.title-line {
+    flex: 1;
+}
+
+/* CARDS SECTIONS PRINCIPAL*/
+/*SIRVE PARA CENTRAR CADA TARJETA*/
+.card-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CARD DE DULCERIA Y REGALOS*/
+/* BASE DE LA TARJETA SE REFIERE AL GRUPO COMPLETO TANTO IMAGEN COMO COLUMNA*/
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    width: 89vw;
+    height: 18vh;
+}
+
+/*COLUMN CARD*/
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.card-title {
+    color: #8E0F19;
+    font-size: clamp(12px, 1.5vw, 20px);
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: clamp(10px, 0.5vw, 16px);
+}
+
+/* BTN de card */
+.card-btn {
+    height: 6vw;
+    max-width: 40vw;
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    background-color: #8E0F19;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(10px, 1.5vw, 30px);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    border: 1px solid #8E0F19;
+    color: #8E0F19;
+    background-color: white;
+}
+
+/* Imágenes */
+.card-img-dulces {
+    background-image: url("Imagenes/img\ dulceria.png");
+    background-position: left;
+    background-size: cover;
+    height: 18vh;
+    width: 50vw;
+}
+
+.card-img-regalos {
+    background-image: url("Imagenes/img\ regalos.png");
+    background-position: left;
+    background-size: cover;
+    height: 18vh;
+    width: 50vw;
+}
+
+/* TABLET Y PC */
+@media (min-width: 769px) {
+
+    .card-section {
+        width: 82vw;
+        height: 45vh;
+    }
+
+    .card-info {
+        width: 25vw;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: clamp(18px, 2vw, 32px);
+    }
+
+    .card-text {
+        font-size: clamp(13px, 1.1vw, 16px);
+    }
+
+    .card-btn {
+        height: 4vw;
+        width: 25vw;
+        border-radius: 1rem;
+        font-size: clamp(12px, 2vw, 50px);
+        font-weight: normal;
+    }
+
+    .card-btn:hover {
+        font-size: clamp(12px, 1.5vw, 30px);
+    }
+
+    .card-img-dulces {
+        background-position: center;
+        height: 45vh;
+        width: 50vw;
+    }
+
+    .card-img-regalos {
+        background-position: left;
+        height: 45vh;
+        width: 50vw;
+    }
+}
+
+
+/* Banner preferenciales */
+.banner-preferenciales {
+    box-sizing: border-box;
+    background-image: url(Imagenes/Banner\ preferenciales.png);
+    background-position: center;
+    background-size: cover;
+
+    min-height: clamp(250px, 30vw, 600px);
+
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta-desc {
+    width: clamp(100px, 33vw, 600px);
+}
+
+.text-preferenciales {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 5vw, 80px);
+    color: white;
+    text-align: center;
+}
+
+.title-preferenciales {
+    font-family: "Great Vibes", cursive;
+    color: #EFAC80;
+    font-size: clamp(20px, 10vw, 100px);
+    text-align: center;
+}
+
+.text-width {
+    width: clamp(180px, 30vw, 500px);
+    font-size: clamp(20px, 2vw, 100px);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .text-width {
+        display: none;
+    }
+
+    .banner-preferenciales {
+        box-sizing: border-box;
+        background-image: url(Imagenes/Banner\ preferenciales.png);
+        background-position: center;
+        background-size: cover;
+
+        min-height: clamp(200px, 25vw, 600px);
+
+        display: flex;
+        align-items: center;
+    }
+
+    .elementos-prefe {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        padding: 20px;
+    }
+
+
+}
+
+.group-title {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.elementos-prefe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px, 5vw, 150px);
+    margin-left: 5vw;
+}
+
+.group-text-all {
+    display: flex;
+    flex-direction: column;
+    width: clamp(150px, 30%, 400px);
+    gap: clamp(8px, 3vw, 40px);
+}
+
+/* CARD TUS PEDIDOS */
+.pedidos-espacio {
+    width: 88.86vw;
+    height: 60vh;
+    position: relative;
+}
+
+.pedidos-base {
+    min-width: 88.86vw;
+    min-height: 50vh;
+    position: absolute;
+    bottom: 0;
+
+    border: 1px solid #FAB225;
+    background-color: #FEF6E9;
+    border-radius: 20px;
+}
+
+.img-pedido {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 31vw;
+}
+
+.title-pedido {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 3vw, 60px);
+}
+
+/* SECCIÓN DE PEDIDOS */
+.icon-pedido {
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-pedido-fondo {
+    background-color: #8E0F19;
+    width: 4vw;
+    height: 4vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.pedido-icon-completo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1vw;
+}
+
+.pedidos-title {
+    color: #FAB225;
+    font-weight: bold;
+}
+
+.group-icon-estados-pedidos {
+    display: flex;
+    gap: 60px;
+}
+
+.color-blue {
+    background-color: #041B55;
+}
+
+.color-naranja {
+    background-color: #FD7D0D;
+}
+
+.color-verde {
+    background-color: #AFD210;
+}
+
+.group-column {
+    display: flex;
+    flex-direction: column;
+    height: 22vw;
+    gap: 3vw;
+
+    position: absolute;
+    right: 2vw;
+    top: 0.5vw;
+}
+
+.text-pedido-columna {
+    font-size: 1.5rem;
+}
+
+.btn-pedidos {
+    height: 8vh;
+    width: 20vw;
+
+    border-radius: 40px;
+    border: 1px solid #FAB225;
+    background-color: white;
+    color: #FAB225;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-pedidos:hover {
+    border: none;
+    background-color: #FAB225;
+    color: white;
+}
+
+.title-pedidos {
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3vw;
+
+    text-align: center;
+    margin: 0;
+    height: 1vh;
+}
+
+@media (max-width: 768px) {
+    .pedidos-espacio {
+        width: 88.86vw;
+        height: 55vh;
+    }
+
+    .pedidos-base {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+
+        width: 88.86vw;
+        padding: 120px 10px;
+    }
+
+    .text-pedido-columna {
+        display: none;
+    }
+
+    /* TITULO */
+    .pedidos-title {
+        font-size: clamp(12px, 3vw, 18px);
+        text-align: right;
+    }
+
+    /* ICONOS */
+    .group-icon-estados-pedidos {
+        display: grid;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .pedido-icon-completo {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        gap: 5px;
+
+        font-size: clamp(10px, 2vw, 14px);
+    }
+
+    .icon-pedido-fondo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-pedido {
+        height: 14px;
+    }
+
+    /* BOTON */
+    .btn-pedidos {
+        width: 120px;
+        height: 35px;
+
+        font-size: 12px;
+
+        position: static;
+    }
+
+    .img-pedido {
+        position: static;
+
+        height: 25vh;
+    }
+
+    .gb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 140px;
+    }
+
+
+}
+
+/* SOBRE NOSOTROS */
+/* CARD NOSOTROS */
+
+.card-nosotros {
+    display: flex;
+    flex-direction: column;
+    /* CELULAR PRIMERO */
+    justify-content: center;
+
+    max-width: 88.86vw;
+    gap: 10px;
+    height: auto;
+}
+
+.card-nosotros-img {
+    background-image: url(Imagenes/nosotros.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    min-height: 40vw;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.card-nosotros-info {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    border: 1px solid #FAB225;
+    border-radius: 0 0 20px 20px;
+
+    gap: 10px;
+    padding-left: 4vw;
+}
+
+.icon-nosotros {
+    width: clamp(20px, 4vw, 100px);
+}
+
+.nosotros-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: clamp(12px, 2vw, 36px);
+    color: #DD9A1B;
+    margin: 0;
+}
+
+.nosotros-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(10px, 1vw, 18px);
+    color: #616161;
+    margin: 0;
+    width: 80%;
+}
+
+.nosotros-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(12px, 1.2vw, 18px);
+    color: #DD9A1B;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nosotros-link:hover {
+    text-decoration: underline;
+    background-color: #FFF2DA;
+}
+
+.card-nosotros-info:hover {
+    background-color: #FFF2DA;
+    transition: background-color 0.3s ease;
+}
+
+/* TABLET Y ESCRITORIO */
+@media (min-width: 769px) {
+
+    .card-nosotros {
+        flex-direction: row;
+        gap: clamp(10px, 1vw, 70px);
+        max-height: 30vw;
+    }
+
+    .card-nosotros-img {
+        width: 60%;
+        min-height: 30vw;
+
+        border-radius: 20px 0 0 20px;
+    }
+
+    .card-nosotros-info {
+        justify-content: center;
+
+        width: 40%;
+
+        gap: clamp(10px, 3vw, 60px);
+
+        border-radius: 0 20px 20px 0;
+    }
+
+    .icon-nosotros {
+        width: clamp(30px, 6vw, 100px);
+    }
+
+    .nosotros-title {
+        font-size: clamp(18px, 2.5vw, 36px);
+    }
+
+    .nosotros-text {
+        font-size: clamp(12px, 1.2vw, 18px);
+    }
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 20px 0;
+
+    background-color: #8E0F19;
+}
+
+.group-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.text-p {
+    color: white;
+}
+
+.group-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    font-size: 0.8rem;
+
+    align-items: center;
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+
+    background-color: white;
+}
+
+.footer-logo {
+    width: auto;
+    height: 50px;
+}
+
+.group-icon-estados {
+    display: flex;
+    gap: 2rem;
+}
+
+.group-icons-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+/* TABLET Y ESCRITORIO FOOTER*/
+@media (min-width: 901px) {
+
+    footer {
+        height: 13.33vw;
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    .group-footer {
+        flex-direction: row;
+        justify-content: center;
+
+        text-align: left;
+
+        gap: clamp(20px, 10vw, 90px);
+    }
+
+    .group-text {
+        font-size: 1.5rem;
+        gap: 20px;
+
+        align-items: flex-start;
+    }
+
+    .line {
+        width: 1px;
+        height: 90%;
+    }
+
+    .footer-logo {
+        height: 6vw;
+    }
+
+    .group-icon-estados {
+        gap: 5rem;
+    }
+
+    .group-icons {
+        gap: 2rem;
+    }
+}
