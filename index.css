@@ -20,6 +20,13 @@ p {
 }
 
 /*Mobile header*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
 .group-header {
     width: 100%;
     display: flex;
@@ -97,8 +104,92 @@ p {
 
 }
 
+/*Titles secciones principales*/
+.title-principales-group {
+    color: #616161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    padding: 0px 20px;
+    gap: 20px;
+    height: 30px;
+}
+
+hr {
+    color: #616161;
+    flex: 1;
+}
+
+/*Card of sections*/
+.card-section-title {
+    color: #8E0F19;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-section-p {
+    color: #616161;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.card-section-btn {
+    background-color: #8E0F19;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+
+    transition: transform 0.3s ease;
+}
+
+.card-section-btn:hover {
+    background-color: white;
+    color: #8E0F19;
+    border: 1px solid #8E0F19;
+    transform: scale(1.05);
+}
+
+.card-section-column {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: space-between;
+}
+
+/*IMAGES OF THE CARDS SECTIONS*/
+.card-section-img {
+    width: 200px;
+    height: 222px;
+
+    background-size: cover;
+    background-position: left;
+}
+
+.img-dulceria {
+    background-image: url(Imagenes/img\ dulceria.png);
+}
+
+.img-regalos {
+    background-image: url(Imagenes/img\ regalos.png);
+}
+
+/*GROUP CARD SECTIONS*/
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+/*Termina movil*/
 /*Tablets*/
 @media (min-width: 750px) {
+
     /*banner*/
     .banner {
         height: 500px;
@@ -129,11 +220,59 @@ p {
         width: 430px;
         height: 250px;
     }
+
+    /*Titles secciones principales*/
+    .title-principales-group {
+        font-size: 30px;
+        gap: 44px;
+        padding: 0px 60px;
+    }
+    /*Card of sections*/
+    .card-section-title {
+        font-size: 28px;
+    }
+
+    .card-section-p {
+        font-size: 18px;
+    }
+
+    .card-section-btn {
+        border-radius: 30px;
+        height: 64.4px;
+        font-size: 25px;
+
+    }
+
+    .card-section-column {
+        display: flex;
+        flex-direction: column;
+
+        width: 400px;
+        justify-content: space-between;
+    }
+
+    /*IMAGES OF THE CARDS SECTIONS*/
+    .card-section-img {
+        width: 693px;
+        height: 330px;
+
+
+        background-size: cover;
+        background-position: left;
+    }
+    /*GROUP CARD SECTIONS*/
+    .card-section {
+        display: flex;
+        width: 98%;
+    }
 }
 
-
+/*Termina table*/
 /*computador*/
 @media (min-width: 900px) {
+    section {
+        gap: 52px;
+    }
 
     /*Header*/
     .group-header-Movil {
@@ -185,4 +324,51 @@ p {
         width: 430px;
         height: 250px;
     }
+
+    /*Titles secciones principales*/
+    .title-principales-group {
+        font-size: 36px;
+        gap: 44px;
+        padding: 0px 60px;
+    }
+
+    /*Card of sections*/
+    .card-section-title {
+        font-size: 40px;
+    }
+
+    .card-section-p {
+        font-size: 20px;
+    }
+
+    .card-section-btn {
+        border-radius: 30px;
+        height: 75px;
+        font-size: 30px;
+
+    }
+
+    .card-section-column {
+        display: flex;
+        flex-direction: column;
+        width: 446px;
+        gap: 57px;
+    }
+
+    /*IMAGES OF THE CARDS SECTIONS*/
+    .card-section-img {
+        width: 693px;
+        height: 369px;
+
+
+        background-size: cover;
+        background-position: left;
+    }
+    /*GROUP CARD SECTIONS*/
+    .card-section {
+        display: flex;
+        width: 1239px;
+    }
 }
+
+/*Termina escritorio*/
