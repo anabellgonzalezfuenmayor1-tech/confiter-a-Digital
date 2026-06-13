@@ -186,6 +186,79 @@ hr {
     padding: 0px 20px;
 }
 
+/*Banner preferenciales*/
+.banner-preferenciales {
+    background-image: url(Imagenes/Banner\ preferenciales.png);
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-preferenciales-title {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.banner-preferenciales-subtitle {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: #EFAC80;
+    font-size: 30px;
+}
+
+.banner-preferenciales-p {
+    display: flex;
+
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.banner-preferenciales-group-textos {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.banner-preferenciales-group-title {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+.banner-icon-desc {
+    background-image: url(Imagenes/tarjeta-banner.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+
+    animation: moverTarjetaDesc 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes moverTarjetaDesc {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
 /*Termina movil*/
 /*Tablets*/
 @media (min-width: 750px) {
@@ -227,6 +300,7 @@ hr {
         gap: 44px;
         padding: 0px 60px;
     }
+
     /*Card of sections*/
     .card-section-title {
         font-size: 28px;
@@ -260,10 +334,44 @@ hr {
         background-size: cover;
         background-position: left;
     }
+
     /*GROUP CARD SECTIONS*/
     .card-section {
         display: flex;
         width: 98%;
+    }
+
+    /*Banner preferenciales*/
+    .banner-preferenciales {
+        height: 300px;
+        gap: 0px;
+        padding-left: 20px;
+    }
+
+    .banner-preferenciales-title {
+        font-size: 50px;
+    }
+
+    .banner-preferenciales-subtitle {
+        font-size: 60px;
+    }
+
+    .banner-preferenciales-p {
+        font-size: 25px;
+    }
+
+    .banner-preferenciales-group-textos {
+        width: 350px;
+        gap: 20px;
+    }
+
+    .banner-preferenciales-group-title {
+        height: 150px;
+    }
+
+    .banner-icon-desc {
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -345,7 +453,6 @@ hr {
         border-radius: 30px;
         height: 75px;
         font-size: 30px;
-
     }
 
     .card-section-column {
@@ -364,10 +471,44 @@ hr {
         background-size: cover;
         background-position: left;
     }
+
     /*GROUP CARD SECTIONS*/
     .card-section {
         display: flex;
         width: 1239px;
+    }
+
+    /*Banner preferenciales*/
+    .banner-preferenciales {
+        height: 500px;
+        gap: 20px;
+        padding-left: 60px;
+    }
+
+    .banner-preferenciales-title {
+        font-size: 96px;
+    }
+
+    .banner-preferenciales-subtitle {
+        font-size: 96px;
+    }
+
+    .banner-preferenciales-p {
+        font-size: 32px;
+    }
+
+    .banner-preferenciales-group-textos {
+        width: 591px;
+        gap: 20px;
+    }
+
+    .banner-preferenciales-group-title {
+        height: 250px;
+    }
+
+    .banner-icon-desc {
+        height: 330px;
+        width: 330px;
     }
 }
 
