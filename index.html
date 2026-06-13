@@ -3,17 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -23,195 +14,38 @@
     <header>
 
         <!-- Header mobile -->
-        <div class="header-mobile">
-            <a href="#index">
-                <img src="Imagenes/icon-header/Logo.png" alt="logo" class="header-logo" />
-            </a>
-            <a href="#index">
-                <img src="Imagenes/icon-header/Menu.png" alt="logo" class="icon-mobile" />
-            </a>
+        <div class="group-header-Movil">
+            <div class="group-header">
+                <a href="#index">
+                    <img src="Imagenes/icon-header/Logo.png" class="icon-logo" />
+                </a>
+                <a href="#index">
+                    <img src="Imagenes/icon-header/Menu.png" class="icon-menu" />
+                </a>
+            </div>
         </div>
 
-        <!-- Header computador -->
-        <div class="header-group">
-            <a href="#index">
-                <img src="Imagenes/icon-header/Logo.png" alt="logo" class="header-logo" />
-            </a>
-            <a href="#index">Inicio</a>
-            <a href="#sweet/shop">Dulceria</a>
-            <a href="#gifts">Regalos</a>
+        <!-- Header destopk -->
+        <div class="group-header-destokp">
+            <div class="group-header">
+                <div class="group-header-elements">
+                    <img src="Imagenes/icon-header/Logo.png" alt="Logo">
+                    <a href="" class="header-text">Inicio</a>
+                    <a href="" class="header-text">Dulceria</a>
+                    <a href="" class="header-text">Regalos</a>
+                </div>
+                <div class="group-header-elements">
+                    <a href="" class="header-text">Nosotros</a>
+                    <a href="" class="header-text">Pedidos</a>
+                    <img src="Imagenes/icon-header/icon cart.png" alt="Carrito">
+                    <img src="Imagenes/icon-header/icon user.png" alt="Perfil">
+                </div>
+            </div>
         </div>
-        <div class="header-group">
-            <a href="#about-us">Nosotros</a>
-            <a href="#delivery">Tus pedidos</a>
-            <a href="#cart">
-                <img src="Imagenes/icon-header/icon cart.png" alt="tu carrito" />
-            </a>
-            <a href="#profile">
-                <img src="Imagenes/icon-header/icon user.png" alt="perfil" />
-            </a>
-        </div>
-
     </header>
-
     <section>
-        <!--Banner-->
-        <div class="banner">
-            <div class="banner-text">
-                <p class="banner-title">Bienvenido a la confiteria digital</p>
-                <p class="banner-sub">ADSO</p>
-            </div>
-            <div class="banner-fondo banner-inicio"></div>
-        </div>
-        <!--Title-->
-        <div class="card-center">
-            <div class="title">
-                <hr class="title-line" />
-                <p>Secciones Principales</p>
-                <hr class="title-line" />
-            </div>
-        </div>
-        <!--secciones principales-->
-        <!-- Card Dulcería -->
-        <div class="card-center">
-            <div class="card-section ">
-                <div class="card-info">
-                    <p class="card-title">Dulceria</p>
-                    <p class="card-text">
-                        Explore nuestra sección de dulcería y descubra una amplia y deliciosa variedad de dulces,
-                        perfectos
-                        para consentirse o compartir en cualquier momento.
-                    </p>
-                    <button class="card-btn">Ver productos...</button>
-                </div>
-                <div class="card-img-dulces"></div>
-            </div>
-        </div>
-        <!-- Card regalos -->
-        <div class="card-center">
-            <div class="card-section">
-
-                <div class="card-info">
-                    <p class="card-title">Regalos</p>
-                    <p class="card-text">
-                        Explore nuestra sección de regalos y descubra una amplia y exclusiva variedad de detalles,
-                        perfectos
-                        para sorprender, celebrar o compartir en cualquier ocasión especial.
-                    </p>
-                    <button class="card-btn">Ver productos...</button>
-                </div>
-                <div class="card-img-regalos"></div>
-
-            </div>
-        </div>
-        <!-- Banner preferenciales -->
-        <div class="banner-preferenciales">
-            <div class="elementos-prefe">
-                <div class="group-text-all">
-                    <div class="group-title">
-                        <p class="text-preferenciales">Clientes</p>
-                        <p class="text-preferenciales title-preferenciales">Preferenciales</p>
-                    </div>
-                    <p class="text-preferenciales text-width">Al llenar la barra de preferenciles accede a decuentos
-                        hasta
-                        del
-                        50%</p>
-                </div>
-                <img src="Imagenes/tarjeta-banner.png" alt="descuentos hasta del 50%" class="tarjeta-desc">
-            </div>
-            <div class="banner-preferenciales"></div>
-        </div>
-        <!-- Card pedidos -->
-        <div class="card-center">
-            <div class="pedidos-espacio">
-                <p class="title-pedido">Tus pedidos</p>
-                <div class="pedidos-base">
-                    <img src="Imagenes/chica_sinfondo 1.png" alt="chica pedido" class="img-pedido">
-                    <div class="group-column">
-
-                        <p class="pedidos-title text-pedido-columna">Consulta el estado de tus pedidos:</p>
-                        <p class="text-pedido-columna">
-                            Sigue tus pedidos fácilmente y mantente informado en todo
-                            momento.
-                        </p>
-                        <div class="gb">
-                            <!--grupos de iconos-->
-                            <div class="group-icon-estados-pedidos">
-                                <div class="pedido-icon-completo">
-                                    <div class="icon-pedido-fondo">
-                                        <img src="Imagenes/icon-delivery/Vector-3.png" alt="" class="icon-pedido" />
-                                    </div>
-                                    <p>Pendiente</p>
-                                </div>
-                                <div class="pedido-icon-completo">
-                                    <div class="icon-pedido-fondo color-blue">
-                                        <img src="Imagenes/icon-delivery/Vector-1.png" alt="" class="icon-pedido" />
-                                    </div>
-                                    <p>Despachado</p>
-                                </div>
-                                <div class="pedido-icon-completo">
-                                    <div class="icon-pedido-fondo color-naranja">
-                                        <img src="Imagenes/icon-delivery/Vector.png" alt="" class="icon-pedido" />
-                                    </div>
-                                    <p>En ruta</p>
-                                </div>
-                                <div class="pedido-icon-completo">
-                                    <div class="icon-pedido-fondo color-verde">
-                                        <img src="Imagenes/icon-delivery/Vector-2.png" alt="" class="icon-pedido" />
-                                    </div>
-                                    <p>Entregado</p>
-                                </div>
-                            </div>
-                            <button class="btn-pedidos">Ver pedidos</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Card sobre nosotros-->
-        <div class="card-center">
-            <div class="card-nosotros">
-                <div class="card-nosotros-img"></div>
-
-                <div class="card-nosotros-info">
-                    <img src="Imagenes/People Skin Type 7.png" alt="equipo" class="icon-nosotros" />
-                    <p class="nosotros-title">Nosotros</p>
-                    <p class="nosotros-text">
-                        Conoce nuestra historia, el equipo que hace posible cada detalle y la
-                        pasión con la que transformamos momentos especiales en experiencias inolvidables.
-                    </p>
-                    <a href="about-us" class="nosotros-link">Descubre más →</a>
-                </div>
-            </div>
-        </div>
+        
     </section>
-    <footer class="group-footer">
-        <div class="group-footer">
-            <img src="Imagenes/icon-header/Logo.png" alt="logo" class="footer-logo">
-            <hr class="line">
-            <div class="group-text">
-                <p class="text-p">Hora de atencion: </p>
-                <p class="text-p">6:00am - 8:00pm</p>
-            </div>
-            <hr class="line">
-
-            <div class="group-text">
-                <p class="text-p">Escribenos al:</p>
-                <p class="text-p">+57 300 14 78919</p>
-            </div>
-            <hr class="line">
-            <div class="group-text">
-                <p class="text-p">Encuentranos en:</p>
-                <div class="group-icons-footer">
-                    <img src="Imagenes/icons redes/YouTube Squared.png" alt="youtube">
-                    <img src="Imagenes/icons redes/X.png" alt="telegram">
-                    <img src="Imagenes/icons redes/Facebook.png" alt="Facebook">
-                    <img src="Imagenes/icons redes/Instagram.png" alt="Instagram">
-                </div>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html
