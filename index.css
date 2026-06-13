@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+/*Configuraciones generales*/
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -14,6 +13,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Mobile header*/
@@ -45,8 +48,93 @@ img {
     font-weight: 396;
 }
 
+/*Banner*/
+.banner {
+    background-image: url(Imagenes/Banner\ Index1,1.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    animation: moverBanner 8s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+}
+
+@keyframes moverBanner {
+    from {
+        background-position: 30% 0%;
+    }
+
+    to {
+        background-position: 60% 40%;
+    }
+}
+
+/*Banner text*/
+.banner-title {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 25px;
+    color: #631613;
+    font-style: italic;
+}
+
+.banner-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #8E0F19;
+}
+
+.banner-group-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 100px;
+
+}
+
+/*Tablets*/
+@media (min-width: 750px) {
+    /*banner*/
+    .banner {
+        height: 500px;
+        animation: moverBanner 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes moverBanner {
+        from {
+            background-position: 0% 40%;
+        }
+
+        to {
+            background-position: 50% 30%;
+        }
+    }
+
+    /*Banner text*/
+    .banner-title {
+        font-size: 64px;
+    }
+
+    .banner-subtitle {
+        font-size: 64px;
+    }
+
+    .banner-group-text {
+        left: 160px;
+        width: 430px;
+        height: 250px;
+    }
+}
+
+
 /*computador*/
 @media (min-width: 900px) {
+
     /*Header*/
     .group-header-Movil {
         display: none;
@@ -65,5 +153,36 @@ img {
 
     .group-header {
         padding: 10px 30px;
+    }
+
+    /*banner*/
+    .banner {
+        height: 600px;
+        animation: moverBanner 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes moverBanner {
+        from {
+            background-position: left center;
+        }
+
+        to {
+            background-position: right center;
+        }
+    }
+
+    /*Banner text*/
+    .banner-title {
+        font-size: 64px;
+    }
+
+    .banner-subtitle {
+        font-size: 64px;
+    }
+
+    .banner-group-text {
+        left: 160px;
+        width: 430px;
+        height: 250px;
     }
 }
