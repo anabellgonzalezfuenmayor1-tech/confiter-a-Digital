@@ -259,6 +259,146 @@ hr {
     }
 }
 
+/*Card de pedidos*/
+.card-pedidos-base {
+    height: 200px;
+    width: 90%;
+    position: relative;
+}
+
+.card-pedidos-img {
+    background-image: url(Imagenes/chica_sinfondo\ 1.png);
+    background-position: center;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -20px;
+    z-index: 2;
+}
+
+.card-pedidos-img {
+    display: none;
+}
+
+.card-pedidos-title {
+    color: #616161;
+    font-family: 'Cormorant Garamond', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+
+.card-pedidos-tarjeta {
+    height: 165px;
+    width: 100%;
+    background-color: #FEF6E9;
+    border-radius: 20px;
+
+    border: 1px solid #FAB225;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-pedidos-iconos {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-pedidos-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.card-pedidos-group-icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.card-pedidos-group-icons {
+    display: grid;
+    width: 250px;
+    height: 100px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+
+    position: absolute;
+}
+
+.card-pedidos-columna {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 70px;
+
+    transform: translateX(-50%);
+
+    height: 83px;
+    width: 250px;
+}
+
+.card-pedidos-btn {
+    font-family: 'Poppins', sans-serif;
+    color: #FAB225;
+    background-color: white;
+    border: 1px solid #FAB225;
+    border-radius: 10px;
+    height: 30px;
+
+    grid-column: 3/2;
+
+}
+
+.card-pedidos-btn:hover {
+    color: white;
+    background-color: #FAB225;
+    border: 1px solid white;
+    font-weight: bold;
+
+}
+
+.card-pedidos-subtitle {
+    display: none;
+}
+
+.card-pedidos-p {
+    color: #616161;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-red {
+    background-color: #8E0F19;
+}
+
+.card-blue {
+    background-color: #041B55;
+}
+
+.card-naranje {
+    background-color: #FD7D0D;
+}
+
+.card-green {
+    background-color: #AFD210;
+}
+.card-pedidos-contenido{
+    display: none;
+
+}
+
 /*Termina movil*/
 /*Tablets*/
 @media (min-width: 750px) {
@@ -372,6 +512,74 @@ hr {
     .banner-icon-desc {
         height: 200px;
         width: 200px;
+    }
+
+    /*Card de pedidos*/
+    .card-pedidos-base {
+        height: 300px;
+        width: 95%;
+    }
+
+    .card-pedidos-img {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+
+    .card-pedidos-title {
+        top: 0px;
+        font-size: 30px;
+    }
+
+    .card-pedidos-tarjeta {
+        height: 250px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .card-pedidos-iconos {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-pedidos-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-pedidos-group-icon {
+        gap: 10px;
+    }
+
+    .card-pedidos-group-icons {
+        width: 250px;
+        gap: 20px;
+    }
+
+    .card-pedidos-columna {
+        width: 360px;
+        height: 240px;
+        bottom: 0px;
+        left: 68%;
+    }
+
+    .card-pedidos-btn {
+        border-radius: 20px;
+        font-size: 20x;
+        height: 40px;
+
+    }
+
+    .card-pedidos-p {
+        font-size: 18px;
+    }
+
+    .card-pedidos-subtitle {
+        display: flex;
+        color: #FAB225;
+        text-align: start;
+        grid-column: span 2;
     }
 }
 
@@ -509,6 +717,99 @@ hr {
     .banner-icon-desc {
         height: 330px;
         width: 330px;
+    }
+
+    /*Card de pedidos*/
+    .card-pedidos-base {
+        height: 504px;
+        width: 92%;
+    }
+
+    .card-pedidos-img {
+        display: flex;
+        width: 500px;
+        height: 504px;
+        z-index: 2;
+
+        left: -16px;
+    }
+
+    .card-pedidos-title {
+        top: 0px;
+        font-size: 48px;
+    }
+
+    .card-pedidos-tarjeta {
+        height: 412px;
+        width: 100%;
+        border-radius: 20px;
+        border: 2px solid #FAB225;
+    }
+
+    .card-pedidos-iconos {
+        width: 58px;
+        height: 58px;
+    }
+
+    .card-pedidos-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-pedidos-group-icon {
+        white-space: nowrap;
+        gap: 9px;
+    }
+
+    .card-pedidos-group-icons {
+        grid-template-columns: repeat(4, auto);
+        
+        gap: 30px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-pedidos-columna {
+        width: 872px;
+        height: 346px;
+        bottom: 35px;
+        left: 66%;
+
+        padding: 10px;
+    }
+
+    .card-pedidos-btn {
+        border-radius: 40px;
+        font-size: 24px;
+        height: 65.46px;
+        width: 288.96px;
+
+        grid-column: 4;
+        grid-column: 3 / 5;
+        justify-self: end;
+        font-weight: 100;
+
+    }
+
+    .card-pedidos-p {
+        font-size: 25px;
+    }
+
+    .card-pedidos-subtitle {
+        font-size: 28px;
+        display: flex;
+        color: #FAB225;
+        text-align: start;
+        font-weight: bold;
+        grid-column: span 4;
+    }
+
+    .card-pedidos-contenido {
+        font-size: 25px;
+        display: flex;
+        text-align: justify;
+        grid-column: span 4;
     }
 }
 
