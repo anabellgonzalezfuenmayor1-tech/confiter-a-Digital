@@ -54,8 +54,78 @@ section {
     font-family: 'Poppins', sans-serif;
     font-weight: 396;
 }
-.header-text:hover{
+
+.header-text:hover {
     text-decoration: underline;
+}
+
+#menu {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.5s ease-in-out;
+    padding: 80px 20px;
+    z-index: 10;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 200px;
+    height: 100vh;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 98;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu.active {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.3s ease;
+    padding: 80px 20px;
+    z-index: 99;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 300px;
+    height: 100vh;
+
 }
 
 /*Banner*/
@@ -1110,7 +1180,8 @@ footer {
         text-align: center;
         width: 230px;
     }
-    .footer-icon{
+
+    .footer-icon {
         width: 53.46px;
         height: 53.46px;
     }
@@ -1118,7 +1189,7 @@ footer {
     .footer-logo {
         width: 201.89px;
         height: 116.24px;
-        
+
     }
 
     .footer-group-tex {
@@ -1136,4 +1207,5 @@ footer {
         gap: 30px;
     }
 }
+
 /*Termina escritorio*/
