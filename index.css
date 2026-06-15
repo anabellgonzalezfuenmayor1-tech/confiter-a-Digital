@@ -16,7 +16,7 @@ img {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 /*Mobile header*/
@@ -53,6 +53,9 @@ section {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 396;
+}
+.header-text:hover{
+    text-decoration: underline;
 }
 
 /*Banner*/
