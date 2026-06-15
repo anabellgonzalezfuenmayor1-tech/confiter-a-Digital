@@ -23,21 +23,32 @@
         <!-- Header mobile -->
         <div class="group-header-Movil">
             <div class="group-header">
-                <a href="#index">
+                <a href="index.html">
                     <img src="Imagenes\icon-header\Logo.svg" class="icon-logo" />
                 </a>
-                <a href="#index">
+                <a href="#index" id="menuBtn">
                     <img src="Imagenes/icon-header/Menu.png" class="icon-menu" />
                 </a>
             </div>
         </div>
+        <div class="overlay" id="overlay"></div>
+        <nav id="menu">
+            <a href="index.html" class="header-text">Inicio</a>
+            <a href="dulceria.html" class="header-text">Dulceria</a>
+            <a href="regalos.html" class="header-text">Regalos</a>
+            <a href="nosotros.html" class="header-text">Nosotros</a>
+            <a href="pedidos.html" class="header-text">Pedidos</a>
+            <a href="pedidos.html" class="header-text">Carrito</a>
+            <a href="pedidos.html" class="header-text">Perfil</a>
+
+        </nav>
 
         <!-- Header destopk -->
         <div class="group-header-destokp">
             <div class="group-header">
                 <div class="group-header-elements">
                     <img src="Imagenes/icon-header/Logo.png" alt="Logo">
-                    <a href="index.html" class="header-text">Inicio</a>
+                    <a href="" class="header-text">Inicio</a>
                     <a href="dulceria.html" class="header-text">Dulceria</a>
                     <a href="regalos.html" class="header-text">Regalos</a>
                 </div>
@@ -50,6 +61,22 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay")
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            menu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
 
 </body>
 
