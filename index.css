@@ -431,7 +431,7 @@ hr {
     height: 200px;
 
     padding: 0px 30px;
-    gap: 20px;
+    gap: 5px;
 
     background-color: white;
     border: 1px solid #DD9A1B;
@@ -499,6 +499,45 @@ hr {
     transition: 0.3s ease-in-out;
 
 
+}
+
+/*footer*/
+footer {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 0px;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: #8E0F19;
+}
+
+.footer-line {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.footer-text {
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.footer-logo {
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-icons {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    gap: 20px;
 }
 
 /*Termina movil*/
@@ -735,13 +774,27 @@ hr {
     .card-about-btn:hover {
         font-size: 18px;
     }
+
+    /*footer*/
+    footer {
+        gap: 30px;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        height: 100px;
+    }
+
 }
 
 /*Termina table*/
 /*computador*/
 @media (min-width: 900px) {
     section {
-        gap: 52px;
+        gap: 60px;
     }
 
     /*Header*/
@@ -1034,6 +1087,50 @@ hr {
         font-size: 24px;
         width: 220px;
     }
-}
 
+    /*footer*/
+    footer {
+        margin-top: 60px;
+        grid-template-columns: 201.89px 1px 224px 1px 189.57px 1px 320px;
+        gap: 80px;
+        height: 200px;
+        align-items: start;
+    }
+
+    .footer-line {
+        height: 100%;
+        width: 1px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+        text-align: center;
+        width: 230px;
+    }
+    .footer-icon{
+        width: 53.46px;
+        height: 53.46px;
+    }
+
+    .footer-logo {
+        width: 201.89px;
+        height: 116.24px;
+        
+    }
+
+    .footer-group-tex {
+        font-family: 'poppins', sans-serif;
+        gap: 20px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 30px;
+    }
+}
 /*Termina escritorio*/
