@@ -83,7 +83,8 @@ section {
     width: 200px;
     height: 100vh;
 }
-.overlay{
+
+.overlay {
     position: fixed;
     inset: 0;
 
@@ -97,7 +98,7 @@ section {
     z-index: 98;
 }
 
-.overlay.active{
+.overlay.active {
     opacity: 1;
     visibility: visible;
 }
@@ -127,8 +128,9 @@ section {
     height: 100vh;
 
 }
+
 /*Banner principal*/
-.banner-principal{
+.banner-principal {
     background-image: url(../Imagenes/Banner\ dulceria.png);
     width: 100%;
     height: 250px;
@@ -139,18 +141,20 @@ section {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
 }
-.banner-text{
+
+.banner-text {
     grid-column: 2/5;
     grid-row: 1/9;
 
     justify-self: center;
     align-self: center;
-    
+
     width: auto;
     height: 200px;
     z-index: 1;
 }
-.banner-paleta{
+
+.banner-paleta {
     grid-column: 6/9;
     grid-row: 5/8;
 
@@ -162,7 +166,8 @@ section {
     z-index: 2;
 
 }
-.banner-gomita{
+
+.banner-gomita {
     grid-column: 6/8;
     grid-row: 6/9;
 
@@ -173,4 +178,35 @@ section {
     width: auto;
     z-index: 3;
 
+}
+
+/*Termina movil*/
+/*Tablets*/
+@media (min-width: 750px) {}
+
+/*escritorio*/
+@media (min-width: 900px) {
+    section {
+        gap: 60px;
+    }
+
+    /*Header*/
+    .group-header-Movil {
+        display: none;
+    }
+
+    .group-header-destokp {
+        display: flex;
+    }
+
+    .group-header-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .group-header {
+        padding: 10px 30px;
+    }
 }
