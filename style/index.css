@@ -60,7 +60,7 @@ section {
 
 /*Banner*/
 .banner {
-    background-image: url(Imagenes/Banner\ Index1,1.png);
+    background-image: url(../Imagenes/Banner\ Index1,1.png);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -175,11 +175,11 @@ hr {
 }
 
 .img-dulceria {
-    background-image: url(Imagenes/img\ dulceria.png);
+    background-image: url(../Imagenes/img\ dulceria.png);
 }
 
 .img-regalos {
-    background-image: url(Imagenes/img\ regalos.png);
+    background-image: url(../Imagenes/img\ regalos.png);
 }
 
 /*GROUP CARD SECTIONS*/
@@ -191,7 +191,7 @@ hr {
 
 /*Banner preferenciales*/
 .banner-preferenciales {
-    background-image: url(Imagenes/Banner\ preferenciales.png);
+    background-image: url(../Imagenes/Banner\ preferenciales.png);
     width: 100%;
     height: 200px;
 
@@ -242,7 +242,7 @@ hr {
 }
 
 .banner-icon-desc {
-    background-image: url(Imagenes/tarjeta-banner.png);
+    background-image: url(../Imagenes/tarjeta-banner.png);
     height: 100px;
     width: 100px;
     background-position: center;
@@ -270,7 +270,7 @@ hr {
 }
 
 .card-pedidos-img {
-    background-image: url(Imagenes/chica_sinfondo\ 1.png);
+    background-image: url(../Imagenes/chica_sinfondo\ 1.png);
     background-position: center;
     background-size: cover;
 
@@ -416,7 +416,7 @@ hr {
 .card-about-img {
     height: 200px;
     width: 100%;
-    background-image: url("Imagenes/nosotros.png");
+    background-image: url("../Imagenes/nosotros.png");
     border-radius: 20px 20px 0 0;
     background-size: cover;
     background-position: top;
