@@ -305,6 +305,112 @@ section {
     font-size: 12px;
 }
 
+/*Vitrina de productos*/
+.vitrina-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.vitrina-prod {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 20px);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+
+
+    width: 165px;
+    height: 200px;
+    border-radius: 5px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.vitrina-prod-title {
+    grid-column: 1/3;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #8E0F19;
+    justify-self: center;
+    align-self: center;
+}
+
+.vitrina-producto-stock {
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #616161;
+}
+
+.vitrina-disponible-circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #AFD210;
+
+}
+
+.vitrina-stock {
+    grid-column: 1/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.vitrina-prod-price {
+    text-align: start;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    color: #8E0F19;
+
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 10;
+}
+
+/*Productos url*/
+.vitrina-prod-sparkies {
+    background-image: url(../Imagenes/sparkis\ chicles.svg);
+}
+
+.vitrina-prod-kick {
+    background-image: url(../Imagenes/kick\ chocolate.svg);
+}
+
+.vitrina-prod-nucita {
+    background-image: url(../Imagenes/nucita\ caramelos.svg);
+}
+
+.vitrina-prod-bianchiNegro {
+    background-image: url(../Imagenes//bianchi\ azul.svg);
+}
+
+.vitrina-prod-lokiño {
+    background-image: url(../Imagenes/lokiño.svg);
+}
+
+.vitrina-prod-trululu {
+    background-image: url(../Imagenes/trululu.svg);
+}
+
+.vitrina-prod-bombombun {
+    background-image: url(../Imagenes/bombonbum.svg);
+}
+
+.vitrina-prod-bianchiBlanco {
+    background-image: url(../Imagenes/bianchi\ blanco.svg);
+}
+
+
 
 /*Termina movil*/
 /*Tablets*/
@@ -335,6 +441,37 @@ section {
         height: 150px;
     }
 
+    /*Vitrina de productos*/
+    .vitrina-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vitrina-prod {
+        width: 210px;
+        height: 250px;
+        border-radius: 10px;
+        grid-template-rows: repeat(15, 1fr);
+
+    }
+
+    .vitrina-prod-title {
+        font-size: 16px;
+    }
+
+    .vitrina-producto-stock {
+        font-size: 12px;
+    }
+
+    .vitrina-disponible-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .vitrina-prod-price {
+        grid-row: 15;
+        grid-column: 1;
+        font-size: 16px;
+    }
 }
 
 /*escritorio*/
@@ -397,18 +534,20 @@ section {
 
         justify-self: center;
         align-self: center;
-        grid-template-columns: 403px 315px 315px 315px;
+        grid-template-columns: 1fr 315px 315px 315px;
         grid-template-rows: 60px;
         gap: 15px;
     }
-    .vitrina-category-categoriesG{
+
+    .vitrina-category-categoriesG {
         gap: 9px;
     }
 
     .vitrina-title {
         font-size: 40px;
     }
-    .vitrina-categories-Icon{
+
+    .vitrina-categories-Icon {
         height: 26px;
         width: 27px;
     }
@@ -482,10 +621,43 @@ section {
     .vitrina-category-textRango {
         font-size: 16px;
         height: 15px;
-    }
-    .vitrina-title-group{
-        grid-row: 1 ;
-        grid-column: 1;
+
     }
 
+    .vitrina-title-group {
+        grid-row: 1;
+        grid-column: 1;
+    }
+        /*Vitrina de productos*/
+    .vitrina-productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .vitrina-prod {
+        width: 328px;
+        height: 382px;
+        border-radius: 10px;
+        grid-template-rows: repeat(15, 1fr);
+        padding: 9px 0px;
+
+    }
+
+    .vitrina-prod-title {
+        font-size: 20px;
+    }
+
+    .vitrina-producto-stock {
+        font-size: 12px;
+    }
+
+    .vitrina-disponible-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .vitrina-prod-price {
+        grid-row: 15;
+        grid-column: 1;
+        font-size: 20px;
+    }
 }
