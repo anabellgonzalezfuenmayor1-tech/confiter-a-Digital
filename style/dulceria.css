@@ -661,9 +661,10 @@ section {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
-.container-gomitas{
+
+.container-gomitas {
     background-image: url(../Imagenes/sombra\ rosa.svg),
-    url(../Imagenes/gomitas\ btn.svg);
+        url(../Imagenes/gomitas\ btn.svg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -672,9 +673,9 @@ section {
     padding: 5px;
 }
 
-.container-paleta{
+.container-paleta {
     background-image: url(../Imagenes/sombra\ paleta.svg),
-    url(../Imagenes/paleta\ btn.svg);
+        url(../Imagenes/paleta\ btn.svg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -683,9 +684,9 @@ section {
     padding: 5px;
 }
 
-.container-bombones{
+.container-bombones {
     background-image: url(../Imagenes/sombra\ bombones.svg),
-    url(../Imagenes/bombones\ btn.svg);
+        url(../Imagenes/bombones\ btn.svg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -699,7 +700,7 @@ section {
 }
 
 .opcion-text {
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'poppins', sans-serif;
     color: white;
     font-weight: bold;
@@ -715,6 +716,60 @@ section {
             white 50%,
             transparent 100%);
 }
+
+/*Banner principal*/
+.banner-preferenciales {
+    background-image: url(../Imagenes/Banner\ preferenciales\ dulceria.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.banner-preferenciales-text{
+    grid-column: 1/4;
+    grid-row: 1/9;
+
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+}
+.banner-prefe-text{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    color: #7A5B33;
+    text-align: center;
+    font-style: italic;
+
+}
+.banner-icon-desc {
+    background-image: url(../Imagenes/tarjeta-banner.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+
+    grid-column: 4/6;
+    grid-row: 3;
+
+    animation: moverTarjetaDesc 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes moverTarjetaDesc {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
+
 
 /*Termina movil*/
 /*Tablets*/
@@ -947,6 +1002,30 @@ section {
 
     .opcion-line {
         height: 2px;
+    }
+    /*Banner clientes preferenciles*/
+    .banner-preferenciales{
+        height: 200px;
+    }
+
+    .banner-preferenciales-text{
+        grid-column: 1/4;
+        grid-row: 1/6;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+    .banner-prefe-text{
+        font-size: 40px;
+    }
+
+    .banner-icon-desc{
+        width: 120px;
+        height: 120px;
+
+        grid-column: 4/5;
+        grid-row: 3;
     }
 }
 
@@ -1321,7 +1400,8 @@ section {
     .icon-videos {
         height: 50px;
     }
-    .icon-videos-go{
+
+    .icon-videos-go {
         height: 40px;
     }
 
@@ -1333,10 +1413,31 @@ section {
         height: 1px;
         width: 50%;
     }
-    .container-group-opcion{
+
+    .container-group-opcion {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
+    /*Preferenciales banner*/
+    .banner-preferenciales{
+        height: 450px;
+    }
+
+    .banner-prefe-text{
+        font-size: 100px;
+    }
+
+    .banner-icon-desc{
+        width: 300px;
+        height: 300px;
+
+        grid-column: 4/5;
+        grid-row: 3;
+
+        justify-self: center;
+        align-self: center;
+    }
+
 }
