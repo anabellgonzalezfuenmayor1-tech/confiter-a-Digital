@@ -729,7 +729,8 @@ section {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-.banner-preferenciales-text{
+
+.banner-preferenciales-text {
     grid-column: 1/4;
     grid-row: 1/9;
 
@@ -737,7 +738,8 @@ section {
     align-self: center;
     z-index: 1;
 }
-.banner-prefe-text{
+
+.banner-prefe-text {
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     color: #7A5B33;
@@ -745,6 +747,7 @@ section {
     font-style: italic;
 
 }
+
 .banner-icon-desc {
     background-image: url(../Imagenes/tarjeta-banner.png);
     height: 100px;
@@ -767,6 +770,44 @@ section {
     to {
         transform: translateY(20px);
     }
+}
+/*footer*/
+footer {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 0px;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: #8E0F19;
+}
+
+.footer-line {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.footer-text {
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.footer-logo {
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-icons {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    gap: 20px;
 }
 
 
@@ -1003,12 +1044,13 @@ section {
     .opcion-line {
         height: 2px;
     }
+
     /*Banner clientes preferenciles*/
-    .banner-preferenciales{
+    .banner-preferenciales {
         height: 200px;
     }
 
-    .banner-preferenciales-text{
+    .banner-preferenciales-text {
         grid-column: 1/4;
         grid-row: 1/6;
 
@@ -1016,16 +1058,28 @@ section {
         align-self: center;
     }
 
-    .banner-prefe-text{
+    .banner-prefe-text {
         font-size: 40px;
     }
 
-    .banner-icon-desc{
+    .banner-icon-desc {
         width: 120px;
         height: 120px;
 
         grid-column: 4/5;
         grid-row: 3;
+    }
+    /*footer*/
+    footer {
+        gap: 30px;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        height: 100px;
     }
 }
 
@@ -1372,7 +1426,8 @@ section {
     /*Videos promocionales*/
     .container-video-promocionales {
         width: 1198px;
-        height: 540px;
+        min-height: 540px;
+        height: auto;
         grid-template-columns: 965px 203px;
         column-gap: 30px;
     }
@@ -1420,16 +1475,17 @@ section {
         justify-content: flex-start;
         align-items: flex-start;
     }
+
     /*Preferenciales banner*/
-    .banner-preferenciales{
+    .banner-preferenciales {
         height: 450px;
     }
 
-    .banner-prefe-text{
+    .banner-prefe-text {
         font-size: 100px;
     }
 
-    .banner-icon-desc{
+    .banner-icon-desc {
         width: 300px;
         height: 300px;
 
@@ -1438,6 +1494,51 @@ section {
 
         justify-self: center;
         align-self: center;
+    }
+    /*footer*/
+    footer {
+        margin-top: 60px;
+        grid-template-columns: 201.89px 1px 224px 1px 189.57px 1px 320px;
+        gap: 80px;
+        height: 200px;
+        align-items: start;
+    }
+
+    .footer-line {
+        height: 100%;
+        width: 1px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+        text-align: center;
+        width: 230px;
+    }
+
+    .footer-icon {
+        width: 53.46px;
+        height: 53.46px;
+    }
+
+    .footer-logo {
+        width: 201.89px;
+        height: 116.24px;
+
+    }
+
+    .footer-group-tex {
+        font-family: 'poppins', sans-serif;
+        gap: 20px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 30px;
     }
 
 }
