@@ -64,29 +64,111 @@
         <div class="banner">
             <div class="banner-group-text">
                 <p class="banner-title">
-                    Bienvenido a la confiteria Digital
+                    Endulzamos Tus Momentos Especiales
                 </p>
                 <p class="banner-subtitle">
-                    ADSO
+                    Creamos experienciales sensoriales a traves de la confiteria artesanal
                 </p>
             </div>
         </div>
-    </section>
-    <script>
-        const menuBtn = document.getElementById("menuBtn");
-        const menu = document.getElementById("menu");
-        const overlay = document.getElementById("overlay")
+        <p class="title">¿Quienes somos?</p>
+        <p class="p-text">En Dulces Momentos creemos que la vida se disfruta en pequeños instantes compartidos. Nacimos
+            de la pasión por la repostería tradicional, transformando recetas en experiencias elegantes y llenas de
+            historia. Hoy ofrecemos una cuidada selección de dulces con ingredientes premium, combinando la nostalgia de
+            lo clásico con un toque moderno y sofisticado.</p>
+        <div class="card-nosotros-base">
+            <div class="container-tarjeta naranja">
+                <img src="Imagenes/Secure.png" alt="" class="img-tarjetas">
+                <p class="p-tarjetas">100% seguridad</p>
+            </div>
+            <div class="container-tarjeta verde">
+                <img src="Imagenes/Approval.png" alt="" class="img-tarjetas">
+                <p class="p-tarjetas">Productos certificados</p>
+            </div>
+            <div class="container-tarjeta morado">
+                <img src="Imagenes/Profitability.png" alt="" class="img-tarjetas">
+                <p class="p-tarjetas">Altas ventas</p>
+            </div>
+        </div>
+        <!--Nuestra mision-->
+        <div class="info-nosotros-1">
+            <p class="title title-info1">Nuestra Misión</p>
+            <p class="p-text info-p1">Nuestra misión es convertir cada regalo en una experiencia dulce e inolvidable,
+                ofreciendo productos de
+                alta calidad elaborados con dedicación y creatividad. Buscamos que cada detalle refleje el cariño y la
+                pasión que ponemos en nuestra dulcería.</p>
+            <div class="tarjeta-celeste">
+                <div class="group-heart">
+                    <hr class="line-heart">
+                    <img src="Imagenes/Heart.svg" class="img-heart">
+                    <hr class="line-heart">
+                </div>
+                <p class="tarjeta-p">Crecer con creatividad, manteniendo nuestra esencia y calidad.</p>
+            </div>
+        </div>
+        <div class="container-img completo1"></div>
+        <!--Nuestra vision-->
+        <div class="info-nosotros-1">
+            <p class="title title-info1">Nuestra Visión</p>
+            <p class="p-text info-p1">Aspiramos a convertirnos en una dulcería referente por la innovación, la
+                excelencia y la confianza de nuestros clientes. Queremos seguir creciendo sin perder nuestra esencia
+                artesanal y nuestro compromiso con la satisfacción de cada persona.</p>
+            <div class="tarjeta-celeste morada">
+                <div class="group-heart">
+                    <hr class="line-heart">
+                    <img src="Imagenes/Heart.svg" class="img-heart">
+                    <hr class="line-heart">
+                </div>
+                <p class="tarjeta-p">Crecer con creatividad, manteniendo nuestra esencia y calidad.</p>
+            </div>
+        </div>
+        <div class="container-img completo2"></div>
+        <!--SECTION DE MAPA-->
+        <div class="mapa">
+            <img src="Imagenes/Location VERDE.svg" class="location-verde">
+            <img src="Imagenes/Location NARANJA.svg" class="location-naranja">
+            <img src="Imagenes/Location BLUE.svg" class="location-azul">
+            <img src="Imagenes/Location ROSA.svg" class="location-rosa">
+        </div>
 
-        menuBtn.addEventListener("click", () => {
-            menu.classList.toggle("active");
-            overlay.classList.toggle("active");
-        });
+        <footer>
+            <img src="Imagenes\icon-header\Logo.svg" alt="Logo" class="footer-logo">
+            <hr class="footer-line">
+            <div class="footer-group-tex">
+                <p class="footer-text">Horario de atención:</p>
+                <p class="footer-text">6:00am - 8:00pm</p>
+            </div class="footer-group-tex">
+            <hr class="footer-line">
+            <div class="footer-group-tex">
+                <p class="footer-text">Escribenos al:</p>
+                <p class="footer-text">+57 300 14 78 919</p>
+            </div>
+            <hr class="footer-line">
+            <div class="footer-group-tex">
+                <p class="footer-text">Encuentranos en:</p>
+                <div class="footer-icons">
+                    <img src="Imagenes/icons redes/YouTube Squared.png" alt="Youtube">
+                    <img src="Imagenes/icons redes/X.png" alt="telegram">
+                    <img src="Imagenes/icons redes/Facebook.png" alt="Facebook">
+                    <img src="Imagenes/icons redes/Instagram.png" alt="Instagram">
+                </div>
+            </div>
+        </footer>
+        <script>
+            const menuBtn = document.getElementById("menuBtn");
+            const menu = document.getElementById("menu");
+            const overlay = document.getElementById("overlay")
 
-        overlay.addEventListener("click", () => {
-            menu.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    </script>
+            menuBtn.addEventListener("click", () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            });
+
+            overlay.addEventListener("click", () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            });
+        </script>
 
 </body>
 
