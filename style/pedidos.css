@@ -1,0 +1,470 @@
+/*Configuraciones generales*/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    background-color: #8E0F19;
+    width: 100%;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+}
+
+/*Mobile header*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.group-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.icon-menu {
+    width: 50px;
+}
+
+.icon-logo {
+    width: 120px;
+}
+
+.group-header-destokp {
+    display: none;
+}
+
+.header-text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 396;
+}
+
+.header-text:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.5s ease-in-out;
+    padding: 80px 20px;
+    z-index: 10;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 200px;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 98;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu.active {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.3s ease;
+    padding: 80px 20px;
+    z-index: 99;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 300px;
+    height: 100vh;
+
+}
+
+/*Pedidos title*/
+.pedidos-title {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #616161;
+    font-weight: bold;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.line-title {
+    border: none;
+    height: 2px;
+    background: #8E0F19;
+    width: 15%;
+}
+
+/*Todos los pedidos*/
+.pedidos-all {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+}
+
+.pedidos-ind {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    color: #616161;
+    font-size: 11px;
+
+    border: 1px solid #2B2F38;
+    border-radius: 20px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ind-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text-pedido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ind-line {
+    display: flex;
+    border: none;
+    height: 1.5px;
+    width: 100%;
+}
+
+.degra-rojo {
+    background: linear-gradient(to right,
+            transparent,
+            #8E0F19,
+            transparent);
+}
+
+.degra-naranja {
+    background: linear-gradient(to right,
+            transparent,
+            #FD7D0D,
+            transparent);
+}
+
+.degra-azul {
+    background: linear-gradient(to right,
+            transparent,
+            #041B55,
+            transparent);
+}
+
+.degra-verde {
+    background: linear-gradient(to right,
+            transparent,
+            #AFD210,
+            transparent);
+}
+
+.btn-detalles {
+    background-color: #2B2F38;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estado-forma {
+    color: white;
+    padding: 0 3px;
+    border-radius: 10px;
+    width: 77px;
+}
+
+/*Colores*/
+.rojo {
+    background-color: #8E0F19;
+}
+
+.verde {
+    background-color: #AFD210;
+}
+
+.naranja {
+    background-color: #FD7D0D;
+}
+
+.azul {
+    background-color: #041B55;
+}
+
+/*footer*/
+footer {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 0px;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: #8E0F19;
+}
+
+.footer-line {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.footer-text {
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.footer-logo {
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-icons {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    gap: 20px;
+}
+
+/*Termina movil*/
+/*Tablets*/
+@media (min-width: 750px) {
+
+    /* Título */
+    .pedidos-title {
+        font-size: 36px;
+    }
+
+    .line-title {
+        width: 9%;
+    }
+
+    /* Contenedor de pedidos */
+    .pedidos-all {
+        gap: 20px;
+    }
+
+    /* Tarjeta */
+    .pedidos-ind {
+        font-size: 15px;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* Título de la tarjeta */
+    .ind-title {
+        font-size: 22px;
+    }
+
+    /* Botón */
+    .btn-detalles {
+        font-size: 16px;
+        padding: 10px 0;
+        border-radius: 18px;
+    }
+
+    /* Estado */
+    .estado-forma {
+        border-radius: 30px;
+        width: 130px;
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}
+
+/*Termina table*/
+/*escritorio*/
+@media (min-width: 900px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    /*Header*/
+    .group-header-Movil {
+        display: none;
+    }
+
+    .group-header-destokp {
+        display: flex;
+    }
+
+    .group-header-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /*Sections pedidos*/
+    /* Título */
+    .pedidos-title {
+        font-size: 64px;
+    }
+
+    .line-title {
+        width: 10%;
+    }
+
+    /* Contenedor de pedidos */
+    .pedidos-all {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    /* Tarjeta */
+    .pedidos-ind {
+        font-size: 20px;
+        gap: 16px;
+        padding: 26px;
+    }
+
+    /* Título de la tarjeta */
+    .ind-title {
+        font-size: 32px;
+    }
+
+    /* Botón */
+    .btn-detalles {
+        font-size: 24px;
+        padding: 30px 0;
+        border-radius: 20px ;
+        height: 52px;
+        font-weight: bold;  
+    }
+
+    /* Estado */
+    .estado-forma {
+        border-radius: 30px;
+        width: 174px;
+        font-size: 20px;
+        padding: 4px 8px;
+    }
+
+    /*footer*/
+    footer {
+        margin-top: 60px;
+        grid-template-columns: 201.89px 1px 224px 1px 189.57px 1px 320px;
+        gap: 80px;
+        height: 200px;
+        align-items: start;
+    }
+
+    .footer-line {
+        height: 100%;
+        width: 1px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+        text-align: center;
+        width: 230px;
+    }
+
+    .footer-icon {
+        width: 53.46px;
+        height: 53.46px;
+    }
+
+    .footer-logo {
+        width: 201.89px;
+        height: 116.24px;
+
+    }
+
+    .container-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .footer-group-tex {
+        font-family: 'poppins', sans-serif;
+        gap: 20px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 30px;
+    }
+}
