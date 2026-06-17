@@ -388,7 +388,7 @@ section {
 .canasta-primera-parte {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 2fr;
+    grid-template-rows: 30px 2fr;
     gap: 5px;
 }
 
@@ -446,6 +446,10 @@ section {
     color: white;
     font-weight: bold;
     font-size: 10px;
+}
+
+.group-precio-canasta {
+    display: none;
 }
 
 .base-productos-canasta-ind {
@@ -723,16 +727,226 @@ footer {
     gap: 20px;
 }
 
+@media (max-width: 767px) {
+
+    .base-videos {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px;
+    }
+
+    .canasta-primera-parte {
+        grid-template-rows: 45px auto;
+    }
+
+    .canasta-primera-segunda {
+        grid-template-rows: 45px auto auto;
+    }
+
+    .canasta-video-title {
+        font-size: 18px;
+        border-radius: 15px 15px 0 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .canasta-producto-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .canasta-imagen-base {
+        border-radius: 0 0 15px 15px;
+        padding: 15px;
+    }
+
+    .base-productos-canasta {
+        padding: 10px 15px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .base-productos-canasta-ind {
+        grid-template-columns: 50px 1fr 20px;
+        height: 65px;
+        column-gap: 8px;
+        padding: 0 8px;
+    }
+
+    .p-canasta-producto {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .p2-canasta-producto {
+        width: auto;
+        font-size: 11px;
+    }
+
+    .base-productos-precio {
+        height: 55px;
+        padding: 0 15px;
+        margin-top: 8px;
+        border-radius: 15px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .precio-canasta {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    .btn-canasta {
+        height: 40px;
+        font-size: 12px;
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn-canasta:first-of-type {
+        margin-right: 10px;
+    }
+
+    .btn-eliminar-producto-canasta {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-botones {
+        width: 18px;
+        height: 18px;
+    }
+
+    .group-precio-canasta {
+        font-size: 10px;
+    }
+}
+
+
 /*Termina movil*/
 /*Tablets*/
 @media (min-width: 750px) {
+    /*Canasta videos - Tablet*/
 
-    /*Canasta videos*/
     .base-videos {
         width: 95%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
+    }
+
+    .canasta-primera-parte {
+        grid-template-rows: 55px auto;
+    }
+
+    .canasta-primera-segunda {
+        grid-template-rows: 55px auto auto;
+    }
+
+    .canasta-video-title {
+        font-size: 24px;
+        border-radius: 20px 20px 0 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .canasta-producto-img {
+        width: 85%;
+        height: auto;
+    }
+
+    .canasta-imagen-base {
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .base-productos-canasta {
+        padding: 15px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .base-productos-canasta-ind {
+        grid-template-columns: 55px 1fr 22px;
+        height: 70px;
+        column-gap: 10px;
+        padding: 0 10px;
+    }
+
+    .p-canasta-producto {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .p2-canasta-producto {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .base-productos-precio {
+        height: 60px;
+        padding: 0 15px;
+        margin-top: 8px;
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .precio-canasta {
+        font-size: 26px;
+        padding: 0;
+    }
+
+    .btn-canasta {
+        height: 45px;
+        font-size: 13px;
+        border-radius: 22px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn-canasta:first-of-type {
+        margin-right: 10px;
+    }
+
+    .btn-eliminar-producto-canasta {
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-botones {
+        width: 20px;
+        height: 20px;
+    }
+
+    .group-precio-canasta {
+        font-size: 11px;
     }
 
     /*Vitrina de productos*/
@@ -765,70 +979,6 @@ footer {
         grid-row: 15;
         grid-column: 1;
         font-size: 16px;
-    }
-
-    /*Canasta videos*/
-
-    .canasta-video-title {
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .canasta-primera-parte {
-        grid-template-rows: 40px 2fr;
-    }
-
-    .canasta-primera-segunda {
-        grid-template-rows: 40px 2fr 40px;
-    }
-
-    .canasta-img {
-        padding: 20px;
-    }
-
-    .canasta-img img {
-        width: 75%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .base-productos-canasta {
-        padding: 15px 20px;
-        gap: 8px;
-    }
-
-    .btn-canasta {
-        font-size: 14px;
-    }
-
-    .base-productos-canasta-ind {
-        grid-template-columns: 0.7fr 2fr;
-        gap: 10px;
-        padding-right: 10px;
-    }
-
-    .p-canasta-producto {
-        font-size: 15px;
-    }
-
-    .base-productos-precio {
-        padding: 0 15px;
-    }
-
-    .precio-canasta {
-        font-size: 18px;
-        padding: 0 10px;
-    }
-
-    .btn-eliminar-producto-canasta {
-        width: 25px;
-        height: 25px;
-
-        background-position: center;
-        background-size: cover;
     }
 
     /*Banner clientes preferenciles*/
@@ -1225,10 +1375,12 @@ footer {
     .btn-canasta:first-of-type {
         margin-right: 20px;
     }
-    .img-botones{
+
+    .img-botones {
         width: 25px;
         height: 25px;
     }
+
     /*Banner clientes preferenciles*/
     .banner-preferenciales {
         height: 200px;

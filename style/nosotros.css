@@ -1,0 +1,180 @@
+/*Configuraciones generales*/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    background-color: #8E0F19;
+    width: 100%;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+}
+
+/*Mobile header*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.group-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.icon-menu {
+    width: 50px;
+}
+
+.icon-logo {
+    width: 120px;
+}
+
+.group-header-destokp {
+    display: none;
+}
+
+.header-text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 396;
+}
+
+.header-text:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.5s ease-in-out;
+    padding: 80px 20px;
+    z-index: 10;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 200px;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 98;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu.active {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.3s ease;
+    padding: 80px 20px;
+    z-index: 99;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 300px;
+    height: 100vh;
+
+}
+
+/*Banner*/
+.banner {
+    background-image: url(../Imagenes/Banner\ regalo\ principal.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    animation: moverBanner 8s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+}
+
+@keyframes moverBanner {
+    from {
+        background-position: 30% 0%;
+    }
+
+    to {
+        background-position: 60% 40%;
+    }
+}
+
+/*Banner text*/
+.banner-title {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 25px;
+    color: #631613;
+    font-style: italic;
+}
+
+.banner-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #8E0F19;
+}
+
+.banner-group-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 100px;
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/nosotros.css" />
+    <title>ADSO</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <!-- Header mobile -->
+        <div class="group-header-Movil">
+            <div class="group-header">
+                <a href="index.html">
+                    <img src="Imagenes\icon-header\Logo.svg" class="icon-logo" />
+                </a>
+                <a href="#index" id="menuBtn">
+                    <img src="Imagenes/icon-header/Menu.png" class="icon-menu" />
+                </a>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <nav id="menu">
+            <a href="index.html" class="header-text">Inicio</a>
+            <a href="dulceria.html" class="header-text">Dulceria</a>
+            <a href="regalos.html" class="header-text">Regalos</a>
+            <a href="nosotros.html" class="header-text">Nosotros</a>
+            <a href="pedidos.html" class="header-text">Pedidos</a>
+            <a href="pedidos.html" class="header-text">Carrito</a>
+            <a href="pedidos.html" class="header-text">Perfil</a>
+
+        </nav>
+
+        <!-- Header destopk -->
+        <div class="group-header-destokp">
+            <div class="group-header">
+                <div class="group-header-elements">
+                    <img src="Imagenes/icon-header/Logo.png" alt="Logo">
+                    <a href="index.html" class="header-text">Inicio</a>
+                    <a href="dulceria.html" class="header-text">Dulceria</a>
+                    <a href="regalos.html" class="header-text">Regalos</a>
+                </div>
+                <div class="group-header-elements">
+                    <a href="nosotros.html" class="header-text">Nosotros</a>
+                    <a href="pedidos.html" class="header-text">Pedidos</a>
+                    <img src="Imagenes/icon-header/icon cart.png" alt="Carrito">
+                    <img src="Imagenes/icon-header/icon user.png" alt="Perfil">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            <div class="banner-group-text">
+                <p class="banner-title">
+                    Bienvenido a la confiteria Digital
+                </p>
+                <p class="banner-subtitle">
+                    ADSO
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay")
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            menu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
+
+</body>
+
+</html>
