@@ -2,6 +2,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
 header {
@@ -83,7 +84,8 @@ section {
     width: 200px;
     height: 100vh;
 }
-.overlay{
+
+.overlay {
     position: fixed;
     inset: 0;
 
@@ -97,7 +99,7 @@ section {
     z-index: 98;
 }
 
-.overlay.active{
+.overlay.active {
     opacity: 1;
     visibility: visible;
 }
@@ -573,7 +575,9 @@ hr {
 
 
 }
-
+.fondo-delivery{
+    
+}
 /*footer*/
 footer {
     margin-top: 30px;
@@ -1205,6 +1209,14 @@ footer {
     .footer-icons {
         display: flex;
         gap: 30px;
+    }
+
+    .fondo-delivery {
+        height: 366px;
+        width: 1380px;
+        background-image: url(../Imagenes/delivery\ completosvg.svg);
+        background-position: center;
+        background-size: cover;
     }
 }
 
