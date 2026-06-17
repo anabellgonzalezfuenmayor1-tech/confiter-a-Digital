@@ -161,8 +161,8 @@ section {
     color: white;
     font-style: italic;
     font-weight: 500;
+    width: 100%;
 
-    width: 400px;
 }
 
 .banner-subtitle {
@@ -171,16 +171,20 @@ section {
     font-size: 26px;
     font-weight: bold;
     color: white;
-    width: 400px;
-
+    width: 100%;
 }
 
 .banner-group-text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
+    width: 80%;
     height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -454,3 +458,126 @@ footer {
     display: flex;
     gap: 20px;
 }
+
+/*Termina movil*/
+/*Tablets*/
+@media (min-width: 750px) {
+
+    /* Banner */
+    .banner {
+        height: 550px;
+    }
+
+    .banner-group-text {
+        width: 600px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .banner-title {
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .banner-subtitle {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    /* Secciones */
+    section {
+        gap: 50px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .p-text {
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    /* Tarjetas */
+    .card-nosotros-base {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .container-tarjeta {
+        height: 70px;
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .img-tarjetas {
+        height: 40px;
+    }
+
+    .info-nosotros-1 {
+        width: 85%;
+        gap: 40px;
+    }
+
+    .title-info1 {
+        font-size: 34px;
+    }
+
+    .info-p1 {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .tarjeta-celeste {
+        width: 100%;
+        max-width: 700px;
+        height: 160px;
+        padding: 25px 35px;
+    }
+
+    .tarjeta-p {
+        font-size: 18px;
+    }
+
+    .img-heart {
+        height: 30px;
+    }
+
+    .line-heart {
+        width: 35%;
+    }
+
+    /* Imagenes */
+
+    .container-img {
+        width: 90%;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    /* MAPA */
+
+    .mapa {
+        width: 90%;
+        height: 800px;
+    }
+
+    .location-naranja,
+    .location-verde,
+    .location-azul,
+    .location-rosa {
+        height: 70px;
+    }
+
+
+}
+/*Termina table*/
+/*escritorio*/
+@media (min-width: 900px) {}
