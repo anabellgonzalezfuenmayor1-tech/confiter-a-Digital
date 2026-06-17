@@ -137,7 +137,6 @@ section {
     height: 400px;
     background-size: cover;
     background-position: center;
-    position: relative;
 
     animation: moverBanner 8s ease-in-out infinite alternate;
     background-repeat: no-repeat;
@@ -149,7 +148,7 @@ section {
     }
 
     to {
-        background-position: 60% 40%;
+        background-position: 70% 40%;
     }
 }
 
@@ -161,7 +160,18 @@ section {
     color: white;
     font-style: italic;
     font-weight: 500;
-    width: 100%;
+
+}
+
+.line-banner {
+    border: none;
+    height: 1px;
+    width: 90%;
+    background: linear-gradient(to right,
+            transparent,
+            #ffffff,
+            transparent);
+    z-index: 20;
 
 }
 
@@ -175,16 +185,14 @@ section {
 }
 
 .banner-group-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80%;
-    height: 100px;
-
+    height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    gap: 30px;
 
 }
 
@@ -463,32 +471,41 @@ footer {
 /*Tablets*/
 @media (min-width: 750px) {
 
-    /* Banner */
+    /*Banner fondo*/
     .banner {
-        height: 550px;
-    }
-
-    .banner-group-text {
-        width: 600px;
-
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-    }
-
-    .banner-title {
+        background: url(../Imagenes/Banner\ principal\ nosotros.png);
         width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+
+        animation: moverBanner 8s ease-in-out infinite alternate;
+        background-repeat: no-repeat;
+    }
+
+    /*Banner text*/
+    .banner-title {
         font-size: 50px;
-        text-align: center;
+
+    }
+
+    .line-banner {
+        width: 80%;
+        z-index: 20;
+
     }
 
     .banner-subtitle {
-        width: 100%;
-        font-size: 45px;
+        font-size: 60px;
     }
+
+    .banner-group-text {
+        height: 500px;
+        width: auto;
+
+
+    }
+
 
     /* Secciones */
     section {
@@ -578,6 +595,142 @@ footer {
 
 
 }
+
 /*Termina table*/
 /*escritorio*/
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    /*Banner fondo*/
+    .banner {
+        background: url(../Imagenes/Banner\ principal\ nosotros.png);
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+
+        animation: moverBanner 8s ease-in-out infinite alternate;
+        background-repeat: no-repeat;
+    }
+
+    /*Banner text*/
+    .banner-title {
+        font-size: 60px;
+
+    }
+
+    .line-banner {
+        width: 80%;
+        z-index: 20;
+
+    }
+
+    .banner-subtitle {
+        font-size: 70px;
+    }
+
+    .banner-group-text {
+        height: 700px;
+        width: auto;
+
+
+    }
+
+    /* Secciones */
+    section {
+        gap: 50px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .p-text {
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.8;
+    }
+
+    .morado {
+        grid-column: 3/4;
+    }
+
+    /* Tarjetas */
+    .card-nosotros-base {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        width: 80%;
+        gap: 20px;
+    }
+
+    .container-tarjeta {
+        height: 70px;
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .img-tarjetas {
+        height: 40px;
+    }
+
+    .info-nosotros-1 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+        gap: 40px;
+    }
+
+    .title-info1 {
+        font-size: 34px;
+    }
+
+    .info-p1 {
+        font-size: 24px;
+
+    }
+
+    .tarjeta-celeste {
+        width: 100%;
+        max-width: 700px;
+        height: 160px;
+    }
+
+    .tarjeta-p {
+        font-size: 24px;
+    }
+
+    .img-heart {
+        height: 30px;
+    }
+
+    .line-heart {
+        width: 35%;
+    }
+
+    /* Imagenes */
+
+    .container-img {
+        width: 90%;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    /* MAPA */
+
+    .mapa {
+        width: 90%;
+        height: 800px;
+    }
+
+    .location-naranja,
+    .location-verde,
+    .location-azul,
+    .location-rosa {
+        height: 70px;
+    }
+
+
+}
