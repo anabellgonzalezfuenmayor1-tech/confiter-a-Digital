@@ -154,29 +154,18 @@ section {
 }
 
 /*Banner text*/
-.banner-title {
-    font-family: 'Cormorant Garamond', serif;
-    text-align: center;
-    font-size: 25px;
-    color: #631613;
-    font-style: italic;
-}
-
-.banner-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: #8E0F19;
-}
 
 .banner-group-text {
+    padding-left: 20px;
+    padding-top: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 200px;
-    height: 100px;
 
+}
+
+.banner-text-banner {
+    height: 150px;
 }
 
 /*Titles secciones principales*/
@@ -573,6 +562,7 @@ hr {
     text-decoration: underline;
     transition: 0.3s ease-in-out;
 }
+
 /*footer*/
 footer {
     margin-top: 30px;
@@ -633,17 +623,16 @@ footer {
     }
 
     /*Banner text*/
-    .banner-title {
-        font-size: 64px;
-    }
-
-    .banner-subtitle {
-        font-size: 64px;
-    }
-
     .banner-group-text {
-        left: 160px;
-        width: 430px;
+        padding-left: 80px;
+        padding-top: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    .banner-text-banner {
         height: 250px;
     }
 
@@ -911,13 +900,13 @@ footer {
     }
 
     .banner-subtitle {
-        font-size: 64px;
+        font-size: 100px;
     }
 
     .banner-group-text {
         left: 160px;
-        width: 430px;
-        height: 250px;
+        width: 600px;
+        height: 300px;
     }
 
     /*Titles secciones principales*/

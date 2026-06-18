@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #8E0F19;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*HEADER*/
+
+.group-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.group-header-destokp {
+    display: none;
+}
+
+.icon-menu {
+    width: 50px;
+}
+
+.icon-logo {
+    width: 120px;
+}
+
+.header-text {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 396;
+}
+
+.header-text:hover {
+    text-decoration: underline;
+}
+
+
+/*MENU LATERAL*/
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 200px;
+    height: 100vh;
+
+    padding: 80px 20px;
+
+    background-color: #8E0F19;
+
+    transition: right .5s ease-in-out;
+    z-index: 10;
+}
+
+#menu.active {
+    right: 0;
+
+    width: 300px;
+
+    transition: right .3s ease;
+    z-index: 99;
+}
+
+
+/*Overlay*/
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .3s ease;
+
+    z-index: 98;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Banner principal*/
+
+.banner-principal {
+    width: 100%;
+    height: 250px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    background-image: url(../Imagenes/banner-prefernciales-fondo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-text {
+    grid-column: 2/5;
+    grid-row: 1/9;
+
+    justify-self: center;
+    align-self: center;
+
+    width: auto;
+    height: 200px;
+
+    z-index: 1;
+}
+
+/*Titulo de productos*/
+.group-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.title-regalos {
+    width: 100%;
+    height: 30px;
+}
+
+/*Vitrina de productos*/
+
+.vitrina-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.vitrina-prod {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 20px);
+
+    width: 165px;
+    height: 200px;
+    padding: 8px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .08);
+
+    background-position: center;
+    background-size: cover;
+
+    transition: .3s;
+}
+
+.vitrina-prod:hover {
+    transform: scale(1.03);
+}
+
+
+/*stock de cada producto*/
+
+.vitrina-stock {
+    grid-column: 1/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.vitrina-disponible-circle {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #AFD210;
+}
+
+.vitrina-producto-stock {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #616161;
+    text-align: center;
+}
+
+
+/*Titulo de cada producto*/
+.vitrina-prod-title {
+    grid-column: 1/3;
+
+    justify-self: center;
+    align-self: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #D69A4D;
+    text-align: center;
+}
+
+
+/*precio del producto*/
+.vitrina-prod-price {
+    grid-column: 1;
+    grid-row: 9;
+
+    justify-self: center;
+    align-self: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #D69A4D;
+    text-align: start;
+}
+
+
+/*descuento*/
+
+.vitrina-producto-descuento {
+    grid-column: 2;
+    grid-row: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #D69A4D;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+/*IMÁGENES PRODUCTOS - DULCERIA*/
+
+.vitrina-prod-sparkies {
+    background-image: url(../Imagenes/sparkis\ chicles.svg);
+}
+
+.vitrina-prod-kick {
+    background-image: url(../Imagenes/kick\ chocolate.svg);
+}
+
+.vitrina-prod-nucita {
+    background-image: url(../Imagenes/nucita\ caramelos.svg);
+}
+
+.vitrina-prod-bianchiNegro {
+    background-image: url(../Imagenes/bianchi\ azul.svg);
+
+}
+
+.vitrina-prod-lokiño {
+    background-image: url(../Imagenes/lokiño.svg);
+}
+
+.vitrina-prod-trululu {
+    background-image: url(../Imagenes/trululu.svg);
+}
+
+.vitrina-prod-bombombun {
+    background-image: url(../Imagenes/bombonbum.svg);
+}
+
+.vitrina-prod-bianchiBlanco {
+    background-image: url(../Imagenes/bianchi\ blanco.svg);
+}
+
+
+/*IMÁGENES PRODUCTOS - REGALOS*/
+
+.vitrina-prod-rubor {
+    background-image: url(../Imagenes/rubor\ producto.svg);
+}
+
+.vitrina-prod-oso {
+    background-image: url(../Imagenes/oso\ peluche.svg);
+}
+
+.vitrina-prod-vaso {
+    background-image: url(../Imagenes/vaso\ stanly.svg);
+}
+
+.vitrina-prod-dino {
+    background-image: url(../Imagenes/dino\ peluche.svg);
+}
+
+.vitrina-prod-colonia {
+    background-image: url(../Imagenes/colonia\ mujer.svg);
+}
+
+.vitrina-prod-girasoles {
+    background-image: url(../Imagenes/ramo\ girasoles.svg);
+}
+
+.vitrina-prod-llavero {
+    background-image: url(../Imagenes/llavero\ gatos.svg);
+}
+
+.vitrina-prod-pinguino {
+    background-image: url(../Imagenes/pinguino\ peluche.svg);
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 30px;
+    padding: 30px 0;
+
+    background: #8E0F19;
+}
+
+.footer-line {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-text {
+    justify-self: center;
+    align-self: center;
+
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-group-tex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width:768px) {
+
+    /* Banner */
+    .banner-principal {
+        height: 450px;
+    }
+
+    .banner-text {
+        grid-column: 1/6;
+        grid-row: 1/9;
+
+        height: 350px;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+    /*Titulos*/
+    .title-regalos {
+        padding-left: 100px;
+        width: auto;
+        height: 40px;
+    }
+
+    /*vitrina productos*/
+    .vitrina-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 5fr);
+        grid-template-rows: auto auto;
+        gap: 40px;
+    }
+
+}
+
+@media (min-width:900px) {
+
+    section {
+        gap: 60px;
+    }
+
+    /* Header */
+
+    .group-header-Movil {
+        display: none;
+    }
+
+    .group-header-destokp {
+        display: flex;
+    }
+
+    .group-header-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .group-header {
+        padding: 10px 30px;
+    }
+
+    /* Banner */
+
+    .banner-principal {
+        height: 700px;
+    }
+
+    .banner-text {
+        grid-column: 1/6;
+        grid-row: 2/8;
+
+        height: 650px;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+    /*Titulos*/
+    .title-regalos {
+        padding-left: 45px;
+        width: auto;
+        height: 60px;
+    }
+
+    /* Productos */
+
+    .vitrina-productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .vitrina-prod {
+        width: 328px;
+        height: 382px;
+
+        padding: 10px;
+
+        border-radius: 10px;
+
+        grid-template-rows: repeat(15, 1fr);
+    }
+
+    .vitrina-prod-title {
+        font-size: 20px;
+    }
+
+    .vitrina-producto-stock {
+        font-size: 12px;
+    }
+
+    .vitrina-disponible-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .vitrina-prod-price {
+        grid-column: 1;
+        grid-row: 15;
+
+        font-size: 20px;
+    }
+
+    .vitrina-producto-descuento {
+        grid-column: 2;
+        grid-row: 15;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #D69A4D;
+        border-radius: 20px;
+
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    footer {
+        height: 200px;
+
+        margin-top: 60px;
+
+        grid-template-columns:
+            201.89px 1px 224px 1px 189.57px 1px 320px;
+
+        gap: 80px;
+
+        align-items: start;
+    }
+
+    .footer-line {
+        width: 1px;
+        height: 100%;
+    }
+
+    .footer-text {
+        width: 230px;
+        font-size: 22px;
+    }
+
+    .footer-logo {
+        width: 201.89px;
+        height: 116.24px;
+    }
+
+    .footer-icon {
+        width: 53.46px;
+        height: 53.46px;
+    }
+
+    .footer-icons {
+        gap: 30px;
+    }
+
+}
