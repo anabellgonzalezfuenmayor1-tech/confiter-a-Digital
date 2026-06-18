@@ -11,62 +11,33 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style/dulceria.css" />
+    <link rel="stylesheet" href="style/inicio_sesion.css" />
     <title>Confiteria digital ADSO</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-
-        <!-- Header mobile -->
-        <div class="group-header-Movil">
-            <div class="group-header">
-                <a href="index.html">
-                    <img src="Imagenes\icon-header\Logo.svg" class="icon-logo" />
-                </a>
-                <a href="#index" id="menuBtn">
-                    <img src="Imagenes/icon-header/Menu.png" class="icon-menu" />
-                </a>
+    <section>
+        <form action="" class="form-inicio">
+            <img src="Imagenes/Logo.svg" alt="" class="logo-inicio">
+            <p class="title-inicio">Confiteria Digital</p>
+            <input type="text" placeholder="Nombre usuario" class="input-inicio input-usuario">
+            <input type="password" placeholder="Contraseña" class="input-inicio input-password">
+            <button class="btn-inicio">Inicio sesion</button>
+            <div class="group-text">
+                <a href="" class="link-p">¿Olvidaste tu contraseña?</a>
+                <a href="loginUp.html" class="link-p">Crear cuenta</a>
             </div>
-        </div>
-        <div class="overlay" id="overlay"></div>
-        <nav id="menu">
-            <a href="index.html" class="header-text">Inicio</a>
-            <a href="dulceria.html" class="header-text">Dulceria</a>
-            <a href="regalos.html" class="header-text">Regalos</a>
-            <a href="nosotros.html" class="header-text">Nosotros</a>
-            <a href="pedidos.html" class="header-text">Pedidos</a>
-            <a href="carrito.html" class="header-text">Carrito</a>
-            <a href="Inicio_sesion.html" class="header-text">Perfil</a>
-
-        </nav>
-
-        <!-- Header destopk -->
-        <div class="group-header-destokp">
-            <div class="group-header">
-                <div class="group-header-elements">
-                    <a href="index.html">
-                        <img src="Imagenes/icon-header/Logo.png" alt="Logo">
-                    </a>
-                    <a href="index.html" class="header-text">Inicio</a>
-                    <a href="dulceria.html" class="header-text">Dulceria</a>
-                    <a href="regalos.html" class="header-text">Regalos</a>
-                </div>
-                <div class="group-header-elements">
-                    <a href="nosotros.html" class="header-text">Nosotros</a>
-                    <a href="pedidos.html" class="header-text">Pedidos</a>
-                    <a href="carrito.html">
-                        <img src="Imagenes/icon-header/icon cart.png" alt="Carrito">
-                    </a>
-
-                    <a href="Inicio_sesion.html">
-                        <img src="Imagenes/icon-header/icon user.png" alt="Perfil">
-                    </a>
-                </div>
+            <div class="heart-group">
+                <hr class="line-inicio">
+                <img src="Imagenes/heart orange.svg" alt="" class="heart-orange">
+                <hr class="line-inicio">
             </div>
-        </div>
-    </header>
+            <div class="group-certicate">
+                <img src="Imagenes/Secure.svg" alt="" class="secure-img">
+                <p class="inicio-p">Protegemos tu informacion con total seguridad</p>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
