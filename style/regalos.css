@@ -131,11 +131,39 @@ section {
 
 /*Banner princiapal regalos*/
 .banner-principal-regalos {
-    background-image: url(../Imagenes/Banner\ regalo\ principal.png);
+    background-image: url(../Imagenes/banner\ regalos\ fondo.png);
     width: 100%;
     height: 300px;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    animation: moverBanner 5s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+}
+.banner-text {
+    grid-column: 2/5;
+    grid-row: 1/9;
+
+    justify-self: center;
+    align-self: center;
+
+    width: auto;
+    height: 200px;
+    z-index: 1;
+}
+
+@keyframes moverBanner {
+    from {
+        background-position: 30% 0%;
+    }
+
+    to {
+        background-position: 100% 40%;
+    }
 }
 
 /*Seccion de sub titulo y filtros*/
