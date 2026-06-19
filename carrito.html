@@ -245,12 +245,14 @@
                     <div class="section-card-base"></div>
                     <div class="section-card-base pse"></div>
                 </div>
-                <button class="btn-compra">
-                    <img src="Imagenes/Checkmark.png" alt="">
-                    Confirmar Pago
-                </button>
+                <a href="pse.html" style="text-decoration: none; width: 100%;">
+                    <button class="btn-compra" style="width: 100%;">
+                        <img src="Imagenes/Checkmark.png" alt="">
+                        Confirmar Pago
+                    </button>
+                </a>
             </div>
-        </div>  
+        </div>
     </section>
     <footer>
         <img src="Imagenes\Logo.svg" alt="Logo" class="footer-logo">
@@ -277,7 +279,7 @@
     </footer>
     <script>
         const menuBtn = document.getElementById("menuBtn");
-        const menu = document.getElementById("menu");   
+        const menu = document.getElementById("menu");
 
         menuBtn.addEventListener("click", () => {
             menu.classList.toggle("active");
