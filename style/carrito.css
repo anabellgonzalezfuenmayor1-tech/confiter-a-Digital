@@ -1,0 +1,912 @@
+/*configuraciones generales*/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #616161;
+
+}
+
+/*Header*/
+header {
+    background-color: #8E0F19;
+    width: 100%;
+}
+
+/*Mobile header*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.group-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.icon-menu {
+    width: 50px;
+}
+
+.icon-logo {
+    width: 120px;
+}
+
+.group-header-destokp {
+    display: none;
+}
+
+.header-text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 396;
+}
+
+.header-text:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.5s ease-in-out;
+    padding: 80px 20px;
+    z-index: 10;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 200px;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 98;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu.active {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: right 0.3s ease;
+    padding: 80px 20px;
+    z-index: 99;
+    gap: 20px;
+    background-color: #8E0F19;
+    width: 300px;
+    height: 100vh;
+
+}
+
+/*title carrito*/
+.title-carrito {
+    height: 40px;
+}
+
+.container-productos {
+    width: 100%;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+
+    gap: 20px;
+    padding: 5px 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.container-productos::-webkit-scrollbar {
+    display: none;
+}
+
+.container-productos::-webkit-scrollbar {
+    display: none;
+}
+
+.base-producto {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.img-producto {
+    font-family: 'poppins', sans-serif;
+    grid-column: 1/4;
+    grid-row: 1;
+
+    width: 100%;
+    height: 130px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-btn {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-quitar {
+    width: 20px;
+    height: 20px;
+
+    justify-self: flex-end;
+
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.btn-remove {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 1px 15px;
+
+    background: #FFF0F1;
+    border: 1px solid #FF5E6B;
+    border-radius: 10px;
+}
+
+.btn-remove img {
+    width: 30px;
+}
+
+.btn-remove p {
+    color: #FF5E6B;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.group-stock {
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    color: #616161;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 2/4;
+    grid-row: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    align-items: self-end;
+}
+
+.base-estado {
+    width: 8px;
+    height: 9px;
+
+    border-radius: 50%;
+    background: #AFD210;
+}
+
+.title-producto {
+    grid-column: 1/4;
+    grid-row: 3;
+    font-family: 'poppins', sans-serif;
+
+    font-size: 13px;
+    color: #8E0F19;
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+
+.description-producto {
+    grid-column: 1/4;
+    grid-row: 4;
+
+    color: #616161;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.precio-producto {
+    grid-column: 1/3;
+    grid-row: 5;
+
+    font-size: 16px;
+    color: #8E0F19;
+    font-weight: 500;
+
+    justify-content: flex-start;
+    align-self: flex-end;
+    align-items: center;
+
+}
+
+.container-cantidad {
+    grid-column: 2/4;
+    grid-row: 5;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2px;
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
+    color: #616161;
+}
+
+.menos,
+.mas,
+.cantidad {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #9a9a9a;
+    font-size: 20px;
+}
+
+.menos {
+    border-radius: 10px 0 0 10px;
+}
+
+.mas {
+    border-radius: 0 10px 10px 0;
+}
+
+.cantidad {
+    color: #8E0F19;
+}
+
+/*productos del carrito*/
+.vitrina-prod-oso {
+    background-image: url(../Imagenes/oso\ peluche.svg);
+}
+
+.vitrina-prod-dino {
+    background-image: url(../Imagenes/dino\ peluche.svg);
+}
+
+.vitrina-prod-girasoles {
+    background-image: url(../Imagenes/ramo\ girasoles.svg);
+}
+
+.vitrina-prod-pinguino {
+    background-image: url(../Imagenes/pinguino\ peluche.svg);
+}
+
+.card-resumen {
+    width: 95%;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+
+}
+
+.card-title {
+    height: 65px;
+    background: #F8E8E8;
+    border-bottom: 1px solid #E7CFCF;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-title img {
+    width: 35px;
+    height: 35px;
+}
+
+.card-title p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #7C0A0A;
+}
+
+.group-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 30px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.subtitle img {
+    width: 32px;
+    height: 32px;
+}
+
+.subtitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #616161;
+}
+
+.subsubtitle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #616161;
+}
+
+.total-compra {
+    margin: 15px 25px 20px;
+    padding: 15px 20px;
+
+    background-color: #F8E8E8;
+    border-radius: 15px;
+}
+
+.total-compra .subtitle p,
+.total-compra .subsubtitle p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7C0A0A;
+}
+
+.costo-envio {
+    border-bottom: 2px solid #E5E5E5;
+
+    margin: 0 30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Title medio de pago*/
+.title-pago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-card-base {
+    background-image: url(../Imagenes/Tarjeta\ de\ credito.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 180px;
+
+
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9a9a9a;
+    border-radius: 10px;
+}
+
+.pse {
+    background-image: url(../Imagenes/Pago\ transferencia\ no\ check.png);
+}
+
+.section-card-base:hover {
+    background-image: url(../Imagenes/Tarjeta\ de\ credito\ check.png);
+    border: 1px solid #4F8405;
+}
+
+.pse:hover {
+    background-image: url(../Imagenes/Pago\ transferencia.png);
+}
+
+.section-medios {
+    display: flex;
+    gap: 20px;
+}
+
+.section-medios img {
+    display: flex;
+    width: 70px;
+}
+
+.subtitle-pago {
+    font-weight: bold;
+}
+
+.group-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*btn pago*/
+.btn-compra {
+    background: linear-gradient(to right,
+            #AFD210,
+            #5A6C08);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+}
+
+
+.btn-compra img {
+    height: 40px;
+}
+
+.container-resumen-pago {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/*footer*/
+footer {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 0px;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: #8E0F19;
+}
+
+.footer-line {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.footer-text {
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.footer-logo {
+    justify-self: center;
+    align-self: center;
+    height: 100px;
+}
+
+.footer-icons {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    gap: 20px;
+}
+
+/*tablats*/
+@media (min-width:750px) {
+
+    .container-productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: row;
+        grid-auto-columns: auto;
+        gap: 20px;
+    }
+
+    .container-resumen-pago {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .card-resumen {
+        width: 90%;
+    }
+
+    .card-title p {
+        font-size: 20px;
+    }
+
+    .group-info {
+        padding: 10px 20px;
+    }
+
+    .subtitle {
+        gap: 8px;
+    }
+
+    .subtitle img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .subtitle p,
+    .subsubtitle p {
+        font-size: 14px;
+    }
+
+    .costo-envio {
+        margin: 0 0;
+    }
+
+    .total-compra {
+        margin: 10px 20px 15px;
+        padding: 5px 10px;
+    }
+
+    .total-compra .subtitle p,
+    .total-compra .subsubtitle p {
+        font-size: 20px;
+    }
+
+    .group-pago {
+        font-size: 12px;
+    }
+}
+
+/*Escritorio*/
+@media (min-width:900px) {
+
+    section {
+
+        row-gap: 30px;
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .group-header-Movil {
+        display: none;
+    }
+
+    .group-header-destokp {
+        display: flex;
+    }
+
+    .group-header-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    header,
+    .title-btn {
+        grid-column: 1/-1;
+    }
+
+    /*productos*/
+
+    .container-productos {
+        width: 100%;
+
+        display: grid;
+        justify-content: center;
+
+        grid-template-columns: repeat(4, 330px);
+        gap: 20px;
+
+        overflow-x: auto;
+    }
+
+    .title-carrito {
+        height: 72px;
+    }
+
+    .group-stock {
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/4;
+    }
+
+    .title-producto {
+        font-family: 'poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .producto-quitar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .img-producto {
+        width: 100%;
+        height: 200px;
+    }
+
+    .description-producto {
+        color: #616161;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /*pago*/
+
+    .container-resumen-pago {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 578px 772px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 35px;
+
+        margin-bottom: 30px;
+    }
+
+    .card-resumen {
+        width: 100%;
+    }
+
+    .card-title {
+        height: 75px;
+    }
+
+    .card-title p {
+        font-size: 24px;
+    }
+
+    .group-info {
+        padding: 18px 80px;
+    }
+
+    .container-cantidad {
+        width: 138px;
+        height: 40px;
+        gap: 9px;
+
+        align-self: flex-start;
+        display: flex;
+        justify-self: top;
+        margin: 0px;
+        justify-self: flex-end;
+        grid-template-columns: 4;
+    }
+
+    .subtitle {
+        gap: 10px;
+    }
+
+    .subtitle img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .subtitle p,
+    .subsubtitle p {
+        font-size: 24px;
+    }
+
+    .costo-envio {
+        margin: 0;
+    }
+
+    .title-pago {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        font-size: 32px;
+
+
+    }
+
+    .total-compra {
+        margin: 20px 40px;
+        padding: 11px 20px;
+        border-radius: 20px;
+        font-size: 28px;
+    }
+
+    .total-compra .subtitle p,
+    .total-compra .subsubtitle p {
+        font-size: 24px;
+    }
+
+    /*pago*/
+
+    .group-pago {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 48px 202px 79px;
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .section-medios {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section-card-base {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-compra {
+        width: 100%;
+        height: 72px;
+        align-self: center;
+        border-radius: 20px;
+        font-size: 40px;
+        gap: 18px
+    }
+
+    /*imagenes*/
+
+    .container-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .btn-compra {
+        height: 79px;
+        align-self: flex-end;
+    }
+
+    .btn-remove {
+        justify-content: center;
+
+        width: 307px;
+        height: 72px;
+
+        border-radius: 20px;
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-remove p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .btn-remove img {
+        height: 59px;
+        width: 59px;
+    }
+
+    .title-btn {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 60px;
+    }
+
+    .menos,
+    .mas,
+    .cantidad {
+        width: 40px;
+        height: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid #9a9a9a;
+        font-size: 20px;
+    }
+
+    /*footer*/
+
+    footer {
+        margin-top: 60px;
+        grid-template-columns: 201.89px 1px 224px 1px 189.57px 1px 320px;
+        gap: 80px;
+        height: 200px;
+        align-items: start;
+    }
+
+    .footer-line {
+        width: 1px;
+        height: 100%;
+    }
+
+    .footer-text {
+        width: 230px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 53.46px;
+        height: 53.46px;
+    }
+
+    .footer-logo {
+        width: 201.89px;
+        height: 116.24px;
+    }
+
+    .footer-group-tex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 90px;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 30px;
+    }
+
+}
