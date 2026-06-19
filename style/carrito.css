@@ -11,6 +11,7 @@
 header {
     background-color: #8E0F19;
     width: 100%;
+
 }
 
 /*Mobile header*/
@@ -157,10 +158,11 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto auto;
+    font-family: 'poppins', sans-serif;
 
     padding: 6px;
     border-radius: 5px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .img-producto {
@@ -251,7 +253,9 @@ section {
 
     font-size: 13px;
     color: #8E0F19;
-    font-weight: 500;
+
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
 
     margin-top: 10px;
 }
@@ -262,6 +266,8 @@ section {
 
     color: #616161;
     font-size: 13px;
+    font-family: 'poppins', sans-serif;
+
     line-height: 1.5;
 }
 
@@ -271,7 +277,9 @@ section {
 
     font-size: 16px;
     color: #8E0F19;
-    font-weight: 500;
+
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
 
     justify-content: flex-start;
     align-self: flex-end;
@@ -654,6 +662,12 @@ footer {
         overflow-x: auto;
     }
 
+    .base-producto {
+        border-radius: 10px;
+        font-family: 'poppins', sans-serif;
+
+    }
+
     .title-carrito {
         height: 72px;
     }
@@ -861,6 +875,12 @@ footer {
 
         border: 1px solid #9a9a9a;
         font-size: 20px;
+    }
+
+    .precio-producto {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'poppins', sans-serif;
     }
 
     /*footer*/
